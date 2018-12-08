@@ -1,0 +1,26 @@
+[
+ {
+   "name": "Alarma",
+   "int_ext": 1
+ },
+ {
+   "name": "Amoblado",
+   "int_ext": 1
+ },
+ {
+   "name": "Armarios empotrados",
+   "int_ext": 1
+ },
+ {
+   "name": "Balcón",
+   "int_ext": 1
+ },
+ {
+   "name": " Árboles frutales",
+   "int_ext": 2
+ },
+ {
+   "name": "Área social",
+   "int_ext": 2
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+   "it_represents": "Sin cobro",
+   "label": "SC"
+ },
+ {
+   "it_represents": "Cobro Diario",
+   "label": "Daily"
+ },
+  {
+   "it_represents": "Cobro Semanal",
+   "label": "CS"
+ },
+  {
+   "it_represents": "Cobro Quincenal",
+   "label": "Biweekly"
+ },
+  {
+   "it_represents": "Cobro Mensual",
+   "label": "Monthly"
+ }
+]

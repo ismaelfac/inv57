@@ -1,0 +1,14 @@
+[
+ {
+   "it_represents": "Disponible",
+   "label": "Available"
+ },
+ {
+   "it_represents": "Vendido",
+   "label": "Sold"
+ },
+ {
+   "it_represents": "Alquilado",
+   "label": "Rented"
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+   "id": "Alarma",
+   "represents": "Cobro diario",
+   "label": "Daily" 
+ },
+ {
+   "id": "Alarma",
+   "represents": "Cobro semanal",
+   "label": "Weekly"
+ },
+ {
+   "id": "Alarma",
+   "represents": "Cobro quincenal",
+   "label": "Biweekly"
+ },
+ {
+   "id": "Alarma",
+   "represents": "Cobro mensual",
+   "label": "Monthly"
+ }
+]

@@ -1,0 +1,4482 @@
+[
+ {
+   "description": "MEDELLIN",
+   "id_departament": 1
+ },
+ {
+   "description": "ABEJORRAL",
+   "id_departament": 1
+ },
+ {
+   "description": "ABRIAQUI",
+   "id_departament": 1
+ },
+ {
+   "description": "ALEJANDRIA",
+   "id_departament": 1
+ },
+ {
+   "description": "AMAGA",
+   "id_departament": 1
+ },
+ {
+   "description": "AMALFI",
+   "id_departament": 1
+ },
+ {
+   "description": "ANDES",
+   "id_departament": 1
+ },
+ {
+   "description": "ANGELOPOLIS",
+   "id_departament": 1
+ },
+ {
+   "description": "ANGOSTURA",
+   "id_departament": 1
+ },
+ {
+   "description": "ANORI",
+   "id_departament": 1
+ },
+ {
+   "description": "SANTAFE DE ANTIOQUIA",
+   "id_departament": 1
+ },
+ {
+   "description": "ANZA",
+   "id_departament": 1
+ },
+ {
+   "description": "APARTADO",
+   "id_departament": 1
+ },
+ {
+   "description": "ARBOLETES",
+   "id_departament": 1
+ },
+ {
+   "description": "ARGELIA",
+   "id_departament": 1
+ },
+ {
+   "description": "ARMENIA",
+   "id_departament": 1
+ },
+ {
+   "description": "BARBOSA",
+   "id_departament": 1
+ },
+ {
+   "description": "BELMIRA",
+   "id_departament": 1
+ },
+ {
+   "description": "BELLO",
+   "id_departament": 1
+ },
+ {
+   "description": "BETANIA",
+   "id_departament": 1
+ },
+ {
+   "description": "BETULIA",
+   "id_departament": 1
+ },
+ {
+   "description": "CIUDAD BOLIVAR",
+   "id_departament": 1
+ },
+ {
+   "description": "BRICEÑO",
+   "id_departament": 1
+ },
+ {
+   "description": "BURITICA",
+   "id_departament": 1
+ },
+ {
+   "description": "CACERES",
+   "id_departament": 1
+ },
+ {
+   "description": "CAICEDO",
+   "id_departament": 1
+ },
+ {
+   "description": "CALDAS",
+   "id_departament": 1
+ },
+ {
+   "description": "CAMPAMENTO",
+   "id_departament": 1
+ },
+ {
+   "description": "CAÑASGORDAS",
+   "id_departament": 1
+ },
+ {
+   "description": "CARACOLI",
+   "id_departament": 1
+ },
+ {
+   "description": "CARAMANTA",
+   "id_departament": 1
+ },
+ {
+   "description": "CAREPA",
+   "id_departament": 1
+ },
+ {
+   "description": "EL CARMEN DE VIBORAL",
+   "id_departament": 1
+ },
+ {
+   "description": "CAROLINA",
+   "id_departament": 1
+ },
+ {
+   "description": "CAUCASIA",
+   "id_departament": 1
+ },
+ {
+   "description": "CHIGORODO",
+   "id_departament": 1
+ },
+ {
+   "description": "CISNEROS",
+   "id_departament": 1
+ },
+ {
+   "description": "COCORNA",
+   "id_departament": 1
+ },
+ {
+   "description": "CONCEPCION",
+   "id_departament": 1
+ },
+ {
+   "description": "CONCORDIA",
+   "id_departament": 1
+ },
+ {
+   "description": "COPACABANA",
+   "id_departament": 1
+ },
+ {
+   "description": "DABEIBA",
+   "id_departament": 1
+ },
+ {
+   "description": "DON MATIAS",
+   "id_departament": 1
+ },
+ {
+   "description": "EBEJICO",
+   "id_departament": 1
+ },
+ {
+   "description": "EL BAGRE",
+   "id_departament": 1
+ },
+ {
+   "description": "ENTRERRIOS",
+   "id_departament": 1
+ },
+ {
+   "description": "ENVIGADO",
+   "id_departament": 1
+ },
+ {
+   "description": "FREDONIA",
+   "id_departament": 1
+ },
+ {
+   "description": "FRONTINO",
+   "id_departament": 1
+ },
+ {
+   "description": "GIRALDO",
+   "id_departament": 1
+ },
+ {
+   "description": "GIRARDOTA",
+   "id_departament": 1
+ },
+ {
+   "description": "GOMEZ PLATA",
+   "id_departament": 1
+ },
+ {
+   "description": "GRANADA",
+   "id_departament": 1
+ },
+ {
+   "description": "GUADALUPE",
+   "id_departament": 1
+ },
+ {
+   "description": "GUARNE",
+   "id_departament": 1
+ },
+ {
+   "description": "GUATAPE",
+   "id_departament": 1
+ },
+ {
+   "description": "HELICONIA",
+   "id_departament": 1
+ },
+ {
+   "description": "HISPANIA",
+   "id_departament": 1
+ },
+ {
+   "description": "ITAGUI",
+   "id_departament": 1
+ },
+ {
+   "description": "ITUANGO",
+   "id_departament": 1
+ },
+ {
+   "description": "JARDIN",
+   "id_departament": 1
+ },
+ {
+   "description": "JERICO",
+   "id_departament": 1
+ },
+ {
+   "description": "LA CEJA",
+   "id_departament": 1
+ },
+ {
+   "description": "LA ESTRELLA",
+   "id_departament": 1
+ },
+ {
+   "description": "LA PINTADA",
+   "id_departament": 1
+ },
+ {
+   "description": "LA UNION",
+   "id_departament": 1
+ },
+ {
+   "description": "LIBORINA",
+   "id_departament": 1
+ },
+ {
+   "description": "MACEO",
+   "id_departament": 1
+ },
+ {
+   "description": "MARINILLA",
+   "id_departament": 1
+ },
+ {
+   "description": "MONTEBELLO",
+   "id_departament": 1
+ },
+ {
+   "description": "MURINDO",
+   "id_departament": 1
+ },
+ {
+   "description": "MUTATA",
+   "id_departament": 1
+ },
+ {
+   "description": "NARIÑO",
+   "id_departament": 1
+ },
+ {
+   "description": "NECOCLI",
+   "id_departament": 1
+ },
+ {
+   "description": "NECHI",
+   "id_departament": 1
+ },
+ {
+   "description": "OLAYA",
+   "id_departament": 1
+ },
+ {
+   "description": "PEÐOL",
+   "id_departament": 1
+ },
+ {
+   "description": "PEQUE",
+   "id_departament": 1
+ },
+ {
+   "description": "PUEBLORRICO",
+   "id_departament": 1
+ },
+ {
+   "description": "PUERTO BERRIO",
+   "id_departament": 1
+ },
+ {
+   "description": "PUERTO NARE",
+   "id_departament": 1
+ },
+ {
+   "description": "PUERTO TRIUNFO",
+   "id_departament": 1
+ },
+ {
+   "description": "REMEDIOS",
+   "id_departament": 1
+ },
+ {
+   "description": "RETIRO",
+   "id_departament": 1
+ },
+ {
+   "description": "RIONEGRO",
+   "id_departament": 1
+ },
+ {
+   "description": "SABANALARGA",
+   "id_departament": 1
+ },
+ {
+   "description": "SABANETA",
+   "id_departament": 1
+ },
+ {
+   "description": "SALGAR",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN ANDRES DE CUERQUIA",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN CARLOS",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN FRANCISCO",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN JERONIMO",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN JOSE DE LA MONTAÑA",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN JUAN DE URABA",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN LUIS",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN PEDRO",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN PEDRO DE URABA",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN RAFAEL",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN ROQUE",
+   "id_departament": 1
+ },
+ {
+   "description": "SAN VICENTE",
+   "id_departament": 1
+ },
+ {
+   "description": "SANTA BARBARA",
+   "id_departament": 1
+ },
+ {
+   "description": "SANTA ROSA DE OSOS",
+   "id_departament": 1
+ },
+ {
+   "description": "SANTO DOMINGO",
+   "id_departament": 1
+ },
+ {
+   "description": "EL SANTUARIO",
+   "id_departament": 1
+ },
+ {
+   "description": "SEGOVIA",
+   "id_departament": 1
+ },
+ {
+   "description": "SONSON",
+   "id_departament": 1
+ },
+ {
+   "description": "SOPETRAN",
+   "id_departament": 1
+ },
+ {
+   "description": "TAMESIS",
+   "id_departament": 1
+ },
+ {
+   "description": "TARAZA",
+   "id_departament": 1
+ },
+ {
+   "description": "TARSO",
+   "id_departament": 1
+ },
+ {
+   "description": "TITIRIBI",
+   "id_departament": 1
+ },
+ {
+   "description": "TOLEDO",
+   "id_departament": 1
+ },
+ {
+   "description": "TURBO",
+   "id_departament": 1
+ },
+ {
+   "description": "URAMITA",
+   "id_departament": 1
+ },
+ {
+   "description": "URRAO",
+   "id_departament": 1
+ },
+ {
+   "description": "VALDIVIA",
+   "id_departament": 1
+ },
+ {
+   "description": "VALPARAISO",
+   "id_departament": 1
+ },
+ {
+   "description": "VEGACHI",
+   "id_departament": 1
+ },
+ {
+   "description": "VENECIA",
+   "id_departament": 1
+ },
+ {
+   "description": "VIGIA DEL FUERTE",
+   "id_departament": 1
+ },
+ {
+   "description": "YALI",
+   "id_departament": 1
+ },
+ {
+   "description": "YARUMAL",
+   "id_departament": 1
+ },
+ {
+   "description": "YOLOMBO",
+   "id_departament": 1
+ },
+ {
+   "description": "YONDO",
+   "id_departament": 1
+ },
+ {
+   "description": "ZARAGOZA",
+   "id_departament": 1
+ },
+ {
+   "description": "BARRANQUILLA",
+   "id_departament": 2
+ },
+ {
+   "description": "BARANOA",
+   "id_departament": 2
+ },
+ {
+   "description": "CAMPO DE LA CRUZ",
+   "id_departament": 2
+ },
+ {
+   "description": "CANDELARIA",
+   "id_departament": 2
+ },
+ {
+   "description": "GALAPA",
+   "id_departament": 2
+ },
+ {
+   "description": "JUAN DE ACOSTA",
+   "id_departament": 2
+ },
+ {
+   "description": "LURUACO",
+   "id_departament": 2
+ },
+ {
+   "description": "MALAMBO",
+   "id_departament": 2
+ },
+ {
+   "description": "MANATI",
+   "id_departament": 2
+ },
+ {
+   "description": "PALMAR DE VARELA",
+   "id_departament": 2
+ },
+ {
+   "description": "PIOJO",
+   "id_departament": 2
+ },
+ {
+   "description": "POLONUEVO",
+   "id_departament": 2
+ },
+ {
+   "description": "PONEDERA",
+   "id_departament": 2
+ },
+ {
+   "description": "PUERTO COLOMBIA",
+   "id_departament": 2
+ },
+ {
+   "description": "REPELON",
+   "id_departament": 2
+ },
+ {
+   "description": "SABANAGRANDE",
+   "id_departament": 2
+ },
+ {
+   "description": "SABANALARGA",
+   "id_departament": 2
+ },
+ {
+   "description": "SANTA LUCIA",
+   "id_departament": 2
+ },
+ {
+   "description": "SANTO TOMAS",
+   "id_departament": 2
+ },
+ {
+   "description": "SOLEDAD",
+   "id_departament": 2
+ },
+ {
+   "description": "SUAN",
+   "id_departament": 2
+ },
+ {
+   "description": "TUBARA",
+   "id_departament": 2
+ },
+ {
+   "description": "USIACURI",
+   "id_departament": 2
+ },
+ {
+   "description": "BOGOTA, D.C.",
+   "id_departament": 3
+ },
+ {
+   "description": "CARTAGENA",
+   "id_departament": 4
+ },
+ {
+   "description": "ACHI",
+   "id_departament": 4
+ },
+ {
+   "description": "ALTOS DEL ROSARIO",
+   "id_departament": 4
+ },
+ {
+   "description": "ARENAL",
+   "id_departament": 4
+ },
+ {
+   "description": "ARJONA",
+   "id_departament": 4
+ },
+ {
+   "description": "ARROYOHONDO",
+   "id_departament": 4
+ },
+ {
+   "description": "BARRANCO DE LOBA",
+   "id_departament": 4
+ },
+ {
+   "description": "CALAMAR",
+   "id_departament": 4
+ },
+ {
+   "description": "CANTAGALLO",
+   "id_departament": 4
+ },
+ {
+   "description": "CICUCO",
+   "id_departament": 4
+ },
+ {
+   "description": "CORDOBA",
+   "id_departament": 4
+ },
+ {
+   "description": "CLEMENCIA",
+   "id_departament": 4
+ },
+ {
+   "description": "EL CARMEN DE BOLIVAR",
+   "id_departament": 4
+ },
+ {
+   "description": "EL GUAMO",
+   "id_departament": 4
+ },
+ {
+   "description": "EL PEÑON",
+   "id_departament": 4
+ },
+ {
+   "description": "HATILLO DE LOBA",
+   "id_departament": 4
+ },
+ {
+   "description": "MAGANGUE",
+   "id_departament": 4
+ },
+ {
+   "description": "MAHATES",
+   "id_departament": 4
+ },
+ {
+   "description": "MARGARITA",
+   "id_departament": 4
+ },
+ {
+   "description": "MARIA LA BAJA",
+   "id_departament": 4
+ },
+ {
+   "description": "MONTECRISTO",
+   "id_departament": 4
+ },
+ {
+   "description": "MOMPOS",
+   "id_departament": 4
+ },
+ {
+   "description": "NOROSI",
+   "id_departament": 4
+ },
+ {
+   "description": "MORALES",
+   "id_departament": 4
+ },
+ {
+   "description": "PINILLOS",
+   "id_departament": 4
+ },
+ {
+   "description": "REGIDOR",
+   "id_departament": 4
+ },
+ {
+   "description": "RIO VIEJO",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN CRISTOBAL",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN ESTANISLAO",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN FERNANDO",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN JACINTO",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN JACINTO DEL CAUCA",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN JUAN NEPOMUCENO",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN MARTIN DE LOBA",
+   "id_departament": 4
+ },
+ {
+   "description": "SAN PABLO",
+   "id_departament": 4
+ },
+ {
+   "description": "SANTA CATALINA",
+   "id_departament": 4
+ },
+ {
+   "description": "SANTA ROSA",
+   "id_departament": 4
+ },
+ {
+   "description": "SANTA ROSA DEL SUR",
+   "id_departament": 4
+ },
+ {
+   "description": "SIMITI",
+   "id_departament": 4
+ },
+ {
+   "description": "SOPLAVIENTO",
+   "id_departament": 4
+ },
+ {
+   "description": "TALAIGUA NUEVO",
+   "id_departament": 4
+ },
+ {
+   "description": "TIQUISIO",
+   "id_departament": 4
+ },
+ {
+   "description": "TURBACO",
+   "id_departament": 4
+ },
+ {
+   "description": "TURBANA",
+   "id_departament": 4
+ },
+ {
+   "description": "VILLANUEVA",
+   "id_departament": 4
+ },
+ {
+   "description": "ZAMBRANO",
+   "id_departament": 4
+ },
+ {
+   "description": "TUNJA",
+   "id_departament": 5
+ },
+ {
+   "description": "ALMEIDA",
+   "id_departament": 5
+ },
+ {
+   "description": "AQUITANIA",
+   "id_departament": 5
+ },
+ {
+   "description": "ARCABUCO",
+   "id_departament": 5
+ },
+ {
+   "description": "BELEN",
+   "id_departament": 5
+ },
+ {
+   "description": "BERBEO",
+   "id_departament": 5
+ },
+ {
+   "description": "BETEITIVA",
+   "id_departament": 5
+ },
+ {
+   "description": "BOAVITA",
+   "id_departament": 5
+ },
+ {
+   "description": "BOYACA",
+   "id_departament": 5
+ },
+ {
+   "description": "BRICEÑO",
+   "id_departament": 5
+ },
+ {
+   "description": "BUENAVISTA",
+   "id_departament": 5
+ },
+ {
+   "description": "BUSBANZA",
+   "id_departament": 5
+ },
+ {
+   "description": "CALDAS",
+   "id_departament": 5
+ },
+ {
+   "description": "CAMPOHERMOSO",
+   "id_departament": 5
+ },
+ {
+   "description": "CERINZA",
+   "id_departament": 5
+ },
+ {
+   "description": "CHINAVITA",
+   "id_departament": 5
+ },
+ {
+   "description": "CHIQUINQUIRA",
+   "id_departament": 5
+ },
+ {
+   "description": "CHISCAS",
+   "id_departament": 5
+ },
+ {
+   "description": "CHITA",
+   "id_departament": 5
+ },
+ {
+   "description": "CHITARAQUE",
+   "id_departament": 5
+ },
+ {
+   "description": "CHIVATA",
+   "id_departament": 5
+ },
+ {
+   "description": "CIENEGA",
+   "id_departament": 5
+ },
+ {
+   "description": "COMBITA",
+   "id_departament": 5
+ },
+ {
+   "description": "COPER",
+   "id_departament": 5
+ },
+ {
+   "description": "CORRALES",
+   "id_departament": 5
+ },
+ {
+   "description": "COVARACHIA",
+   "id_departament": 5
+ },
+ {
+   "description": "CUBARA",
+   "id_departament": 5
+ },
+ {
+   "description": "CUCAITA",
+   "id_departament": 5
+ },
+ {
+   "description": "CUITIVA",
+   "id_departament": 5
+ },
+ {
+   "description": "CHIQUIZA",
+   "id_departament": 5
+ },
+ {
+   "description": "CHIVOR",
+   "id_departament": 5
+ },
+ {
+   "description": "DUITAMA",
+   "id_departament": 5
+ },
+ {
+   "description": "EL COCUY",
+   "id_departament": 5
+ },
+ {
+   "description": "EL ESPINO",
+   "id_departament": 5
+ },
+ {
+   "description": "FIRAVITOBA",
+   "id_departament": 5
+ },
+ {
+   "description": "FLORESTA",
+   "id_departament": 5
+ },
+ {
+   "description": "GACHANTIVA",
+   "id_departament": 5
+ },
+ {
+   "description": "GAMEZA",
+   "id_departament": 5
+ },
+ {
+   "description": "GARAGOA",
+   "id_departament": 5
+ },
+ {
+   "description": "GUACAMAYAS",
+   "id_departament": 5
+ },
+ {
+   "description": "GUATEQUE",
+   "id_departament": 5
+ },
+ {
+   "description": "GUAYATA",
+   "id_departament": 5
+ },
+ {
+   "description": "GsICAN",
+   "id_departament": 5
+ },
+ {
+   "description": "IZA",
+   "id_departament": 5
+ },
+ {
+   "description": "JENESANO",
+   "id_departament": 5
+ },
+ {
+   "description": "JERICO",
+   "id_departament": 5
+ },
+ {
+   "description": "LABRANZAGRANDE",
+   "id_departament": 5
+ },
+ {
+   "description": "LA CAPILLA",
+   "id_departament": 5
+ },
+ {
+   "description": "LA VICTORIA",
+   "id_departament": 5
+ },
+ {
+   "description": "LA UVITA",
+   "id_departament": 5
+ },
+ {
+   "description": "VILLA DE LEYVA",
+   "id_departament": 5
+ },
+ {
+   "description": "MACANAL",
+   "id_departament": 5
+ },
+ {
+   "description": "MARIPI",
+   "id_departament": 5
+ },
+ {
+   "description": "MIRAFLORES",
+   "id_departament": 5
+ },
+ {
+   "description": "MONGUA",
+   "id_departament": 5
+ },
+ {
+   "description": "MONGUI",
+   "id_departament": 5
+ },
+ {
+   "description": "MONIQUIRA",
+   "id_departament": 5
+ },
+ {
+   "description": "MOTAVITA",
+   "id_departament": 5
+ },
+ {
+   "description": "MUZO",
+   "id_departament": 5
+ },
+ {
+   "description": "NOBSA",
+   "id_departament": 5
+ },
+ {
+   "description": "NUEVO COLON",
+   "id_departament": 5
+ },
+ {
+   "description": "OICATA",
+   "id_departament": 5
+ },
+ {
+   "description": "OTANCHE",
+   "id_departament": 5
+ },
+ {
+   "description": "PACHAVITA",
+   "id_departament": 5
+ },
+ {
+   "description": "PAEZ",
+   "id_departament": 5
+ },
+ {
+   "description": "PAIPA",
+   "id_departament": 5
+ },
+ {
+   "description": "PAJARITO",
+   "id_departament": 5
+ },
+ {
+   "description": "PANQUEBA",
+   "id_departament": 5
+ },
+ {
+   "description": "PAUNA",
+   "id_departament": 5
+ },
+ {
+   "description": "PAYA",
+   "id_departament": 5
+ },
+ {
+   "description": "PAZ DE RIO",
+   "id_departament": 5
+ },
+ {
+   "description": "PESCA",
+   "id_departament": 5
+ },
+ {
+   "description": "PISBA",
+   "id_departament": 5
+ },
+ {
+   "description": "PUERTO BOYACA",
+   "id_departament": 5
+ },
+ {
+   "description": "QUIPAMA",
+   "id_departament": 5
+ },
+ {
+   "description": "RAMIRIQUI",
+   "id_departament": 5
+ },
+ {
+   "description": "RAQUIRA",
+   "id_departament": 5
+ },
+ {
+   "description": "RONDON",
+   "id_departament": 5
+ },
+ {
+   "description": "SABOYA",
+   "id_departament": 5
+ },
+ {
+   "description": "SACHICA",
+   "id_departament": 5
+ },
+ {
+   "description": "SAMACA",
+   "id_departament": 5
+ },
+ {
+   "description": "SAN EDUARDO",
+   "id_departament": 5
+ },
+ {
+   "description": "SAN JOSE DE PARE",
+   "id_departament": 5
+ },
+ {
+   "description": "SAN LUIS DE GACENO",
+   "id_departament": 5
+ },
+ {
+   "description": "SAN MATEO",
+   "id_departament": 5
+ },
+ {
+   "description": "SAN MIGUEL DE SEMA",
+   "id_departament": 5
+ },
+ {
+   "description": "SAN PABLO DE BORBUR",
+   "id_departament": 5
+ },
+ {
+   "description": "SANTANA",
+   "id_departament": 5
+ },
+ {
+   "description": "SANTA MARIA",
+   "id_departament": 5
+ },
+ {
+   "description": "SANTA ROSA DE VITERBO",
+   "id_departament": 5
+ },
+ {
+   "description": "SANTA SOFIA",
+   "id_departament": 5
+ },
+ {
+   "description": "SATIVANORTE",
+   "id_departament": 5
+ },
+ {
+   "description": "SATIVASUR",
+   "id_departament": 5
+ },
+ {
+   "description": "SIACHOQUE",
+   "id_departament": 5
+ },
+ {
+   "description": "SOATA",
+   "id_departament": 5
+ },
+ {
+   "description": "SOCOTA",
+   "id_departament": 5
+ },
+ {
+   "description": "SOCHA",
+   "id_departament": 5
+ },
+ {
+   "description": "SOGAMOSO",
+   "id_departament": 5
+ },
+ {
+   "description": "SOMONDOCO",
+   "id_departament": 5
+ },
+ {
+   "description": "SORA",
+   "id_departament": 5
+ },
+ {
+   "description": "SOTAQUIRA",
+   "id_departament": 5
+ },
+ {
+   "description": "SORACA",
+   "id_departament": 5
+ },
+ {
+   "description": "SUSACON",
+   "id_departament": 5
+ },
+ {
+   "description": "SUTAMARCHAN",
+   "id_departament": 5
+ },
+ {
+   "description": "SUTATENZA",
+   "id_departament": 5
+ },
+ {
+   "description": "TASCO",
+   "id_departament": 5
+ },
+ {
+   "description": "TENZA",
+   "id_departament": 5
+ },
+ {
+   "description": "TIBANA",
+   "id_departament": 5
+ },
+ {
+   "description": "TIBASOSA",
+   "id_departament": 5
+ },
+ {
+   "description": "TINJACA",
+   "id_departament": 5
+ },
+ {
+   "description": "TIPACOQUE",
+   "id_departament": 5
+ },
+ {
+   "description": "TOCA",
+   "id_departament": 5
+ },
+ {
+   "description": "TOGsI",
+   "id_departament": 5
+ },
+ {
+   "description": "TOPAGA",
+   "id_departament": 5
+ },
+ {
+   "description": "TOTA",
+   "id_departament": 5
+ },
+ {
+   "description": "TUNUNGUA",
+   "id_departament": 5
+ },
+ {
+   "description": "TURMEQUE",
+   "id_departament": 5
+ },
+ {
+   "description": "TUTA",
+   "id_departament": 5
+ },
+ {
+   "description": "TUTAZA",
+   "id_departament": 5
+ },
+ {
+   "description": "UMBITA",
+   "id_departament": 5
+ },
+ {
+   "description": "VENTAQUEMADA",
+   "id_departament": 5
+ },
+ {
+   "description": "VIRACACHA",
+   "id_departament": 5
+ },
+ {
+   "description": "ZETAQUIRA",
+   "id_departament": 5
+ },
+ {
+   "description": "MANIZALES",
+   "id_departament": 6
+ },
+ {
+   "description": "AGUADAS",
+   "id_departament": 6
+ },
+ {
+   "description": "ANSERMA",
+   "id_departament": 6
+ },
+ {
+   "description": "ARANZAZU",
+   "id_departament": 6
+ },
+ {
+   "description": "BELALCAZAR",
+   "id_departament": 6
+ },
+ {
+   "description": "CHINCHINA",
+   "id_departament": 6
+ },
+ {
+   "description": "FILADELFIA",
+   "id_departament": 6
+ },
+ {
+   "description": "LA DORADA",
+   "id_departament": 6
+ },
+ {
+   "description": "LA MERCED",
+   "id_departament": 6
+ },
+ {
+   "description": "MANZANARES",
+   "id_departament": 6
+ },
+ {
+   "description": "MARMATO",
+   "id_departament": 6
+ },
+ {
+   "description": "MARQUETALIA",
+   "id_departament": 6
+ },
+ {
+   "description": "MARULANDA",
+   "id_departament": 6
+ },
+ {
+   "description": "NEIRA",
+   "id_departament": 6
+ },
+ {
+   "description": "NORCASIA",
+   "id_departament": 6
+ },
+ {
+   "description": "PACORA",
+   "id_departament": 6
+ },
+ {
+   "description": "PALESTINA",
+   "id_departament": 6
+ },
+ {
+   "description": "PENSILVANIA",
+   "id_departament": 6
+ },
+ {
+   "description": "RIOSUCIO",
+   "id_departament": 6
+ },
+ {
+   "description": "RISARALDA",
+   "id_departament": 6
+ },
+ {
+   "description": "SALAMINA",
+   "id_departament": 6
+ },
+ {
+   "description": "SAMANA",
+   "id_departament": 6
+ },
+ {
+   "description": "SAN JOSE",
+   "id_departament": 6
+ },
+ {
+   "description": "SUPIA",
+   "id_departament": 6
+ },
+ {
+   "description": "VICTORIA",
+   "id_departament": 6
+ },
+ {
+   "description": "VILLAMARIA",
+   "id_departament": 6
+ },
+ {
+   "description": "VITERBO",
+   "id_departament": 6
+ },
+ {
+   "description": "FLORENCIA",
+   "id_departament": 7
+ },
+ {
+   "description": "ALBANIA",
+   "id_departament": 7
+ },
+ {
+   "description": "BELEN DE LOS ANDAQUIES",
+   "id_departament": 7
+ },
+ {
+   "description": "CARTAGENA DEL CHAIRA",
+   "id_departament": 7
+ },
+ {
+   "description": "CURILLO",
+   "id_departament": 7
+ },
+ {
+   "description": "EL DONCELLO",
+   "id_departament": 7
+ },
+ {
+   "description": "EL PAUJIL",
+   "id_departament": 7
+ },
+ {
+   "description": "LA MONTAÑITA",
+   "id_departament": 7
+ },
+ {
+   "description": "MILAN",
+   "id_departament": 7
+ },
+ {
+   "description": "MORELIA",
+   "id_departament": 7
+ },
+ {
+   "description": "PUERTO RICO",
+   "id_departament": 7
+ },
+ {
+   "description": "SAN JOSE DEL FRAGUA",
+   "id_departament": 7
+ },
+ {
+   "description": "SAN VICENTE DEL CAGUAN",
+   "id_departament": 7
+ },
+ {
+   "description": "SOLANO",
+   "id_departament": 7
+ },
+ {
+   "description": "SOLITA",
+   "id_departament": 7
+ },
+ {
+   "description": "VALPARAISO",
+   "id_departament": 7
+ },
+ {
+   "description": "POPAYAN",
+   "id_departament": 8
+ },
+ {
+   "description": "ALMAGUER",
+   "id_departament": 8
+ },
+ {
+   "description": "ARGELIA",
+   "id_departament": 8
+ },
+ {
+   "description": "BALBOA",
+   "id_departament": 8
+ },
+ {
+   "description": "BOLIVAR",
+   "id_departament": 8
+ },
+ {
+   "description": "BUENOS AIRES",
+   "id_departament": 8
+ },
+ {
+   "description": "CAJIBIO",
+   "id_departament": 8
+ },
+ {
+   "description": "CALDONO",
+   "id_departament": 8
+ },
+ {
+   "description": "CALOTO",
+   "id_departament": 8
+ },
+ {
+   "description": "CORINTO",
+   "id_departament": 8
+ },
+ {
+   "description": "EL TAMBO",
+   "id_departament": 8
+ },
+ {
+   "description": "FLORENCIA",
+   "id_departament": 8
+ },
+ {
+   "description": "GUACHENE",
+   "id_departament": 8
+ },
+ {
+   "description": "GUAPI",
+   "id_departament": 8
+ },
+ {
+   "description": "INZA",
+   "id_departament": 8
+ },
+ {
+   "description": "JAMBALO",
+   "id_departament": 8
+ },
+ {
+   "description": "LA SIERRA",
+   "id_departament": 8
+ },
+ {
+   "description": "LA VEGA",
+   "id_departament": 8
+ },
+ {
+   "description": "LOPEZ",
+   "id_departament": 8
+ },
+ {
+   "description": "MERCADERES",
+   "id_departament": 8
+ },
+ {
+   "description": "MIRANDA",
+   "id_departament": 8
+ },
+ {
+   "description": "MORALES",
+   "id_departament": 8
+ },
+ {
+   "description": "PADILLA",
+   "id_departament": 8
+ },
+ {
+   "description": "PAEZ",
+   "id_departament": 8
+ },
+ {
+   "description": "PATIA",
+   "id_departament": 8
+ },
+ {
+   "description": "PIAMONTE",
+   "id_departament": 8
+ },
+ {
+   "description": "PIENDAMO",
+   "id_departament": 8
+ },
+ {
+   "description": "PUERTO TEJADA",
+   "id_departament": 8
+ },
+ {
+   "description": "PURACE",
+   "id_departament": 8
+ },
+ {
+   "description": "ROSAS",
+   "id_departament": 8
+ },
+ {
+   "description": "SAN SEBASTIAN",
+   "id_departament": 8
+ },
+ {
+   "description": "SANTANDER DE QUILICHAO",
+   "id_departament": 8
+ },
+ {
+   "description": "SANTA ROSA",
+   "id_departament": 8
+ },
+ {
+   "description": "SILVIA",
+   "id_departament": 8
+ },
+ {
+   "description": "SOTARA",
+   "id_departament": 8
+ },
+ {
+   "description": "SUAREZ",
+   "id_departament": 8
+ },
+ {
+   "description": "SUCRE",
+   "id_departament": 8
+ },
+ {
+   "description": "TIMBIO",
+   "id_departament": 8
+ },
+ {
+   "description": "TIMBIQUI",
+   "id_departament": 8
+ },
+ {
+   "description": "TORIBIO",
+   "id_departament": 8
+ },
+ {
+   "description": "TOTORO",
+   "id_departament": 8
+ },
+ {
+   "description": "VILLA RICA",
+   "id_departament": 8
+ },
+ {
+   "description": "VALLEDUPAR",
+   "id_departament": 9
+ },
+ {
+   "description": "AGUACHICA",
+   "id_departament": 9
+ },
+ {
+   "description": "AGUSTIN CODAZZI",
+   "id_departament": 9
+ },
+ {
+   "description": "ASTREA",
+   "id_departament": 9
+ },
+ {
+   "description": "BECERRIL",
+   "id_departament": 9
+ },
+ {
+   "description": "BOSCONIA",
+   "id_departament": 9
+ },
+ {
+   "description": "CHIMICHAGUA",
+   "id_departament": 9
+ },
+ {
+   "description": "CHIRIGUANA",
+   "id_departament": 9
+ },
+ {
+   "description": "CURUMANI",
+   "id_departament": 9
+ },
+ {
+   "description": "EL COPEY",
+   "id_departament": 9
+ },
+ {
+   "description": "EL PASO",
+   "id_departament": 9
+ },
+ {
+   "description": "GAMARRA",
+   "id_departament": 9
+ },
+ {
+   "description": "GONZALEZ",
+   "id_departament": 9
+ },
+ {
+   "description": "LA GLORIA",
+   "id_departament": 9
+ },
+ {
+   "description": "LA JAGUA DE IBIRICO",
+   "id_departament": 9
+ },
+ {
+   "description": "MANAURE",
+   "id_departament": 9
+ },
+ {
+   "description": "PAILITAS",
+   "id_departament": 9
+ },
+ {
+   "description": "PELAYA",
+   "id_departament": 9
+ },
+ {
+   "description": "PUEBLO BELLO",
+   "id_departament": 9
+ },
+ {
+   "description": "RIO DE ORO",
+   "id_departament": 9
+ },
+ {
+   "description": "LA PAZ",
+   "id_departament": 9
+ },
+ {
+   "description": "SAN ALBERTO",
+   "id_departament": 9
+ },
+ {
+   "description": "SAN DIEGO",
+   "id_departament": 9
+ },
+ {
+   "description": "SAN MARTIN",
+   "id_departament": 9
+ },
+ {
+   "description": "TAMALAMEQUE",
+   "id_departament": 9
+ },
+ {
+   "description": "MONTERIA",
+   "id_departament": 10
+ },
+ {
+   "description": "AYAPEL",
+   "id_departament": 10
+ },
+ {
+   "description": "BUENAVISTA",
+   "id_departament": 10
+ },
+ {
+   "description": "CANALETE",
+   "id_departament": 10
+ },
+ {
+   "description": "CERETE",
+   "id_departament": 10
+ },
+ {
+   "description": "CHIMA",
+   "id_departament": 10
+ },
+ {
+   "description": "CHINU",
+   "id_departament": 10
+ },
+ {
+   "description": "CIENAGA DE ORO",
+   "id_departament": 10
+ },
+ {
+   "description": "COTORRA",
+   "id_departament": 10
+ },
+ {
+   "description": "LA APARTADA",
+   "id_departament": 10
+ },
+ {
+   "description": "LORICA",
+   "id_departament": 10
+ },
+ {
+   "description": "LOS CORDOBAS",
+   "id_departament": 10
+ },
+ {
+   "description": "MOMIL",
+   "id_departament": 10
+ },
+ {
+   "description": "MONTELIBANO",
+   "id_departament": 10
+ },
+ {
+   "description": "MOÑITOS",
+   "id_departament": 10
+ },
+ {
+   "description": "PLANETA RICA",
+   "id_departament": 10
+ },
+ {
+   "description": "PUEBLO NUEVO",
+   "id_departament": 10
+ },
+ {
+   "description": "PUERTO ESCONDIDO",
+   "id_departament": 10
+ },
+ {
+   "description": "PUERTO LIBERTADOR",
+   "id_departament": 10
+ },
+ {
+   "description": "PURISIMA",
+   "id_departament": 10
+ },
+ {
+   "description": "SAHAGUN",
+   "id_departament": 10
+ },
+ {
+   "description": "SAN ANDRES SOTAVENTO",
+   "id_departament": 10
+ },
+ {
+   "description": "SAN ANTERO",
+   "id_departament": 10
+ },
+ {
+   "description": "SAN BERNARDO DEL VIENTO",
+   "id_departament": 10
+ },
+ {
+   "description": "SAN CARLOS",
+   "id_departament": 10
+ },
+ {
+   "description": "SAN PELAYO",
+   "id_departament": 10
+ },
+ {
+   "description": "TIERRALTA",
+   "id_departament": 10
+ },
+ {
+   "description": "VALENCIA",
+   "id_departament": 10
+ },
+ {
+   "description": "AGUA DE DIOS",
+   "id_departament": 11
+ },
+ {
+   "description": "ALBAN",
+   "id_departament": 11
+ },
+ {
+   "description": "ANAPOIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "ANOLAIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "ARBELAEZ",
+   "id_departament": 11
+ },
+ {
+   "description": "BELTRAN",
+   "id_departament": 11
+ },
+ {
+   "description": "BITUIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "BOJACA",
+   "id_departament": 11
+ },
+ {
+   "description": "CABRERA",
+   "id_departament": 11
+ },
+ {
+   "description": "CACHIPAY",
+   "id_departament": 11
+ },
+ {
+   "description": "CAJICA",
+   "id_departament": 11
+ },
+ {
+   "description": "CAPARRAPI",
+   "id_departament": 11
+ },
+ {
+   "description": "CAQUEZA",
+   "id_departament": 11
+ },
+ {
+   "description": "CARMEN DE CARUPA",
+   "id_departament": 11
+ },
+ {
+   "description": "CHAGUANI",
+   "id_departament": 11
+ },
+ {
+   "description": "CHIA",
+   "id_departament": 11
+ },
+ {
+   "description": "CHIPAQUE",
+   "id_departament": 11
+ },
+ {
+   "description": "CHOACHI",
+   "id_departament": 11
+ },
+ {
+   "description": "CHOCONTA",
+   "id_departament": 11
+ },
+ {
+   "description": "COGUA",
+   "id_departament": 11
+ },
+ {
+   "description": "COTA",
+   "id_departament": 11
+ },
+ {
+   "description": "CUCUNUBA",
+   "id_departament": 11
+ },
+ {
+   "description": "EL COLEGIO",
+   "id_departament": 11
+ },
+ {
+   "description": "EL PEÑON",
+   "id_departament": 11
+ },
+ {
+   "description": "EL ROSAL",
+   "id_departament": 11
+ },
+ {
+   "description": "FACATATIVA",
+   "id_departament": 11
+ },
+ {
+   "description": "FOMEQUE",
+   "id_departament": 11
+ },
+ {
+   "description": "FOSCA",
+   "id_departament": 11
+ },
+ {
+   "description": "FUNZA",
+   "id_departament": 11
+ },
+ {
+   "description": "FUQUENE",
+   "id_departament": 11
+ },
+ {
+   "description": "FUSAGASUGA",
+   "id_departament": 11
+ },
+ {
+   "description": "GACHALA",
+   "id_departament": 11
+ },
+ {
+   "description": "GACHANCIPA",
+   "id_departament": 11
+ },
+ {
+   "description": "GACHETA",
+   "id_departament": 11
+ },
+ {
+   "description": "GAMA",
+   "id_departament": 11
+ },
+ {
+   "description": "GIRARDOT",
+   "id_departament": 11
+ },
+ {
+   "description": "GRANADA",
+   "id_departament": 11
+ },
+ {
+   "description": "GUACHETA",
+   "id_departament": 11
+ },
+ {
+   "description": "GUADUAS",
+   "id_departament": 11
+ },
+ {
+   "description": "GUASCA",
+   "id_departament": 11
+ },
+ {
+   "description": "GUATAQUI",
+   "id_departament": 11
+ },
+ {
+   "description": "GUATAVITA",
+   "id_departament": 11
+ },
+ {
+   "description": "GUAYABAL DE SIQUIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "GUAYABETAL",
+   "id_departament": 11
+ },
+ {
+   "description": "GUTIERREZ",
+   "id_departament": 11
+ },
+ {
+   "description": "JERUSALEN",
+   "id_departament": 11
+ },
+ {
+   "description": "JUNIN",
+   "id_departament": 11
+ },
+ {
+   "description": "LA CALERA",
+   "id_departament": 11
+ },
+ {
+   "description": "LA MESA",
+   "id_departament": 11
+ },
+ {
+   "description": "LA PALMA",
+   "id_departament": 11
+ },
+ {
+   "description": "LA PEÑA",
+   "id_departament": 11
+ },
+ {
+   "description": "LA VEGA",
+   "id_departament": 11
+ },
+ {
+   "description": "LENGUAZAQUE",
+   "id_departament": 11
+ },
+ {
+   "description": "MACHETA",
+   "id_departament": 11
+ },
+ {
+   "description": "MADRID",
+   "id_departament": 11
+ },
+ {
+   "description": "MANTA",
+   "id_departament": 11
+ },
+ {
+   "description": "MEDINA",
+   "id_departament": 11
+ },
+ {
+   "description": "MOSQUERA",
+   "id_departament": 11
+ },
+ {
+   "description": "NARIÑO",
+   "id_departament": 11
+ },
+ {
+   "description": "NEMOCON",
+   "id_departament": 11
+ },
+ {
+   "description": "NILO",
+   "id_departament": 11
+ },
+ {
+   "description": "NIMAIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "NOCAIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "VENECIA",
+   "id_departament": 11
+ },
+ {
+   "description": "PACHO",
+   "id_departament": 11
+ },
+ {
+   "description": "PAIME",
+   "id_departament": 11
+ },
+ {
+   "description": "PANDI",
+   "id_departament": 11
+ },
+ {
+   "description": "PARATEBUENO",
+   "id_departament": 11
+ },
+ {
+   "description": "PASCA",
+   "id_departament": 11
+ },
+ {
+   "description": "PUERTO SALGAR",
+   "id_departament": 11
+ },
+ {
+   "description": "PULI",
+   "id_departament": 11
+ },
+ {
+   "description": "QUEBRADANEGRA",
+   "id_departament": 11
+ },
+ {
+   "description": "QUETAME",
+   "id_departament": 11
+ },
+ {
+   "description": "QUIPILE",
+   "id_departament": 11
+ },
+ {
+   "description": "APULO",
+   "id_departament": 11
+ },
+ {
+   "description": "RICAURTE",
+   "id_departament": 11
+ },
+ {
+   "description": "SAN ANTONIO DEL TEQUENDAMA",
+   "id_departament": 11
+ },
+ {
+   "description": "SAN BERNARDO",
+   "id_departament": 11
+ },
+ {
+   "description": "SAN CAYETANO",
+   "id_departament": 11
+ },
+ {
+   "description": "SAN FRANCISCO",
+   "id_departament": 11
+ },
+ {
+   "description": "SAN JUAN DE RIO SECO",
+   "id_departament": 11
+ },
+ {
+   "description": "SASAIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "SESQUILE",
+   "id_departament": 11
+ },
+ {
+   "description": "SIBATE",
+   "id_departament": 11
+ },
+ {
+   "description": "SILVANIA",
+   "id_departament": 11
+ },
+ {
+   "description": "SIMIJACA",
+   "id_departament": 11
+ },
+ {
+   "description": "SOACHA",
+   "id_departament": 11
+ },
+ {
+   "description": "SOPO",
+   "id_departament": 11
+ },
+ {
+   "description": "SUBACHOQUE",
+   "id_departament": 11
+ },
+ {
+   "description": "SUESCA",
+   "id_departament": 11
+ },
+ {
+   "description": "SUPATA",
+   "id_departament": 11
+ },
+ {
+   "description": "SUSA",
+   "id_departament": 11
+ },
+ {
+   "description": "SUTATAUSA",
+   "id_departament": 11
+ },
+ {
+   "description": "TABIO",
+   "id_departament": 11
+ },
+ {
+   "description": "TAUSA",
+   "id_departament": 11
+ },
+ {
+   "description": "TENA",
+   "id_departament": 11
+ },
+ {
+   "description": "TENJO",
+   "id_departament": 11
+ },
+ {
+   "description": "TIBACUY",
+   "id_departament": 11
+ },
+ {
+   "description": "TIBIRITA",
+   "id_departament": 11
+ },
+ {
+   "description": "TOCAIMA",
+   "id_departament": 11
+ },
+ {
+   "description": "TOCANCIPA",
+   "id_departament": 11
+ },
+ {
+   "description": "TOPAIPI",
+   "id_departament": 11
+ },
+ {
+   "description": "UBALA",
+   "id_departament": 11
+ },
+ {
+   "description": "UBAQUE",
+   "id_departament": 11
+ },
+ {
+   "description": "VILLA DE SAN DIEGO DE UBATE",
+   "id_departament": 11
+ },
+ {
+   "description": "UNE",
+   "id_departament": 11
+ },
+ {
+   "description": "UTICA",
+   "id_departament": 11
+ },
+ {
+   "description": "VERGARA",
+   "id_departament": 11
+ },
+ {
+   "description": "VIANI",
+   "id_departament": 11
+ },
+ {
+   "description": "VILLAGOMEZ",
+   "id_departament": 11
+ },
+ {
+   "description": "VILLAPINZON",
+   "id_departament": 11
+ },
+ {
+   "description": "VILLETA",
+   "id_departament": 11
+ },
+ {
+   "description": "VIOTA",
+   "id_departament": 11
+ },
+ {
+   "description": "YACOPI",
+   "id_departament": 11
+ },
+ {
+   "description": "ZIPACON",
+   "id_departament": 11
+ },
+ {
+   "description": "ZIPAQUIRA",
+   "id_departament": 11
+ },
+ {
+   "description": "QUIBDO",
+   "id_departament": 12
+ },
+ {
+   "description": "ACANDI",
+   "id_departament": 12
+ },
+ {
+   "description": "ALTO BAUDO",
+   "id_departament": 12
+ },
+ {
+   "description": "ATRATO",
+   "id_departament": 12
+ },
+ {
+   "description": "BAGADO",
+   "id_departament": 12
+ },
+ {
+   "description": "BAHIA SOLANO",
+   "id_departament": 12
+ },
+ {
+   "description": "BAJO BAUDO",
+   "id_departament": 12
+ },
+ {
+   "description": "BOJAYA",
+   "id_departament": 12
+ },
+ {
+   "description": "EL CANTON DEL SAN PABLO",
+   "id_departament": 12
+ },
+ {
+   "description": "CARMEN DEL DARIEN",
+   "id_departament": 12
+ },
+ {
+   "description": "CERTEGUI",
+   "id_departament": 12
+ },
+ {
+   "description": "CONDOTO",
+   "id_departament": 12
+ },
+ {
+   "description": "EL CARMEN DE ATRATO",
+   "id_departament": 12
+ },
+ {
+   "description": "EL LITORAL DEL SAN JUAN",
+   "id_departament": 12
+ },
+ {
+   "description": "ISTMINA",
+   "id_departament": 12
+ },
+ {
+   "description": "JURADO",
+   "id_departament": 12
+ },
+ {
+   "description": "LLORO",
+   "id_departament": 12
+ },
+ {
+   "description": "MEDIO ATRATO",
+   "id_departament": 12
+ },
+ {
+   "description": "MEDIO BAUDO",
+   "id_departament": 12
+ },
+ {
+   "description": "MEDIO SAN JUAN",
+   "id_departament": 12
+ },
+ {
+   "description": "NOVITA",
+   "id_departament": 12
+ },
+ {
+   "description": "NUQUI",
+   "id_departament": 12
+ },
+ {
+   "description": "RIO IRO",
+   "id_departament": 12
+ },
+ {
+   "description": "RIO QUITO",
+   "id_departament": 12
+ },
+ {
+   "description": "RIOSUCIO",
+   "id_departament": 12
+ },
+ {
+   "description": "SAN JOSE DEL PALMAR",
+   "id_departament": 12
+ },
+ {
+   "description": "SIPI",
+   "id_departament": 12
+ },
+ {
+   "description": "TADO",
+   "id_departament": 12
+ },
+ {
+   "description": "UNGUIA",
+   "id_departament": 12
+ },
+ {
+   "description": "UNION PANAMERICANA",
+   "id_departament": 12
+ },
+ {
+   "description": "NEIVA",
+   "id_departament": 13
+ },
+ {
+   "description": "ACEVEDO",
+   "id_departament": 13
+ },
+ {
+   "description": "AGRADO",
+   "id_departament": 13
+ },
+ {
+   "description": "AIPE",
+   "id_departament": 13
+ },
+ {
+   "description": "ALGECIRAS",
+   "id_departament": 13
+ },
+ {
+   "description": "ALTAMIRA",
+   "id_departament": 13
+ },
+ {
+   "description": "BARAYA",
+   "id_departament": 13
+ },
+ {
+   "description": "CAMPOALEGRE",
+   "id_departament": 13
+ },
+ {
+   "description": "COLOMBIA",
+   "id_departament": 13
+ },
+ {
+   "description": "ELIAS",
+   "id_departament": 13
+ },
+ {
+   "description": "GARZON",
+   "id_departament": 13
+ },
+ {
+   "description": "GIGANTE",
+   "id_departament": 13
+ },
+ {
+   "description": "GUADALUPE",
+   "id_departament": 13
+ },
+ {
+   "description": "HOBO",
+   "id_departament": 13
+ },
+ {
+   "description": "IQUIRA",
+   "id_departament": 13
+ },
+ {
+   "description": "ISNOS",
+   "id_departament": 13
+ },
+ {
+   "description": "LA ARGENTINA",
+   "id_departament": 13
+ },
+ {
+   "description": "LA PLATA",
+   "id_departament": 13
+ },
+ {
+   "description": "NATAGA",
+   "id_departament": 13
+ },
+ {
+   "description": "OPORAPA",
+   "id_departament": 13
+ },
+ {
+   "description": "PAICOL",
+   "id_departament": 13
+ },
+ {
+   "description": "PALERMO",
+   "id_departament": 13
+ },
+ {
+   "description": "PALESTINA",
+   "id_departament": 13
+ },
+ {
+   "description": "PITAL",
+   "id_departament": 13
+ },
+ {
+   "description": "PITALITO",
+   "id_departament": 13
+ },
+ {
+   "description": "RIVERA",
+   "id_departament": 13
+ },
+ {
+   "description": "SALADOBLANCO",
+   "id_departament": 13
+ },
+ {
+   "description": "SAN AGUSTIN",
+   "id_departament": 13
+ },
+ {
+   "description": "SANTA MARIA",
+   "id_departament": 13
+ },
+ {
+   "description": "SUAZA",
+   "id_departament": 13
+ },
+ {
+   "description": "TARQUI",
+   "id_departament": 13
+ },
+ {
+   "description": "TESALIA",
+   "id_departament": 13
+ },
+ {
+   "description": "TELLO",
+   "id_departament": 13
+ },
+ {
+   "description": "TERUEL",
+   "id_departament": 13
+ },
+ {
+   "description": "TIMANA",
+   "id_departament": 13
+ },
+ {
+   "description": "VILLAVIEJA",
+   "id_departament": 13
+ },
+ {
+   "description": "YAGUARA",
+   "id_departament": 13
+ },
+ {
+   "description": "RIOHACHA",
+   "id_departament": 14
+ },
+ {
+   "description": "ALBANIA",
+   "id_departament": 14
+ },
+ {
+   "description": "BARRANCAS",
+   "id_departament": 14
+ },
+ {
+   "description": "DIBULLA",
+   "id_departament": 14
+ },
+ {
+   "description": "DISTRACCION",
+   "id_departament": 14
+ },
+ {
+   "description": "EL MOLINO",
+   "id_departament": 14
+ },
+ {
+   "description": "FONSECA",
+   "id_departament": 14
+ },
+ {
+   "description": "HATONUEVO",
+   "id_departament": 14
+ },
+ {
+   "description": "LA JAGUA DEL PILAR",
+   "id_departament": 14
+ },
+ {
+   "description": "MAICAO",
+   "id_departament": 14
+ },
+ {
+   "description": "MANAURE",
+   "id_departament": 14
+ },
+ {
+   "description": "SAN JUAN DEL CESAR",
+   "id_departament": 14
+ },
+ {
+   "description": "URIBIA",
+   "id_departament": 14
+ },
+ {
+   "description": "URUMITA",
+   "id_departament": 14
+ },
+ {
+   "description": "VILLANUEVA",
+   "id_departament": 14
+ },
+ {
+   "description": "SANTA MARTA",
+   "id_departament": 15
+ },
+ {
+   "description": "ALGARROBO",
+   "id_departament": 15
+ },
+ {
+   "description": "ARACATACA",
+   "id_departament": 15
+ },
+ {
+   "description": "ARIGUANI",
+   "id_departament": 15
+ },
+ {
+   "description": "CERRO SAN ANTONIO",
+   "id_departament": 15
+ },
+ {
+   "description": "CHIBOLO",
+   "id_departament": 15
+ },
+ {
+   "description": "CIENAGA",
+   "id_departament": 15
+ },
+ {
+   "description": "CONCORDIA",
+   "id_departament": 15
+ },
+ {
+   "description": "EL BANCO",
+   "id_departament": 15
+ },
+ {
+   "description": "EL PIÑON",
+   "id_departament": 15
+ },
+ {
+   "description": "EL RETEN",
+   "id_departament": 15
+ },
+ {
+   "description": "FUNDACION",
+   "id_departament": 15
+ },
+ {
+   "description": "GUAMAL",
+   "id_departament": 15
+ },
+ {
+   "description": "NUEVA GRANADA",
+   "id_departament": 15
+ },
+ {
+   "description": "PEDRAZA",
+   "id_departament": 15
+ },
+ {
+   "description": "PIJIÑO DEL CARMEN",
+   "id_departament": 15
+ },
+ {
+   "description": "PIVIJAY",
+   "id_departament": 15
+ },
+ {
+   "description": "PLATO",
+   "id_departament": 15
+ },
+ {
+   "description": "PUEBLOVIEJO",
+   "id_departament": 15
+ },
+ {
+   "description": "REMOLINO",
+   "id_departament": 15
+ },
+ {
+   "description": "SABANAS DE SAN ANGEL",
+   "id_departament": 15
+ },
+ {
+   "description": "SALAMINA",
+   "id_departament": 15
+ },
+ {
+   "description": "SAN SEBASTIAN DE BUENAVISTA",
+   "id_departament": 15
+ },
+ {
+   "description": "SAN ZENON",
+   "id_departament": 15
+ },
+ {
+   "description": "SANTA ANA",
+   "id_departament": 15
+ },
+ {
+   "description": "SANTA BARBARA DE PINTO",
+   "id_departament": 15
+ },
+ {
+   "description": "SITIONUEVO",
+   "id_departament": 15
+ },
+ {
+   "description": "TENERIFE",
+   "id_departament": 15
+ },
+ {
+   "description": "ZAPAYAN",
+   "id_departament": 15
+ },
+ {
+   "description": "ZONA BANANERA",
+   "id_departament": 15
+ },
+ {
+   "description": "VILLAVICENCIO",
+   "id_departament": 16
+ },
+ {
+   "description": "ACACIAS",
+   "id_departament": 16
+ },
+ {
+   "description": "BARRANCA DE UPIA",
+   "id_departament": 16
+ },
+ {
+   "description": "CABUYARO",
+   "id_departament": 16
+ },
+ {
+   "description": "CASTILLA LA NUEVA",
+   "id_departament": 16
+ },
+ {
+   "description": "CUBARRAL",
+   "id_departament": 16
+ },
+ {
+   "description": "CUMARAL",
+   "id_departament": 16
+ },
+ {
+   "description": "EL CALVARIO",
+   "id_departament": 16
+ },
+ {
+   "description": "EL CASTILLO",
+   "id_departament": 16
+ },
+ {
+   "description": "EL DORADO",
+   "id_departament": 16
+ },
+ {
+   "description": "FUENTE DE ORO",
+   "id_departament": 16
+ },
+ {
+   "description": "GRANADA",
+   "id_departament": 16
+ },
+ {
+   "description": "GUAMAL",
+   "id_departament": 16
+ },
+ {
+   "description": "MAPIRIPAN",
+   "id_departament": 16
+ },
+ {
+   "description": "MESETAS",
+   "id_departament": 16
+ },
+ {
+   "description": "LA MACARENA",
+   "id_departament": 16
+ },
+ {
+   "description": "URIBE",
+   "id_departament": 16
+ },
+ {
+   "description": "LEJANIAS",
+   "id_departament": 16
+ },
+ {
+   "description": "PUERTO CONCORDIA",
+   "id_departament": 16
+ },
+ {
+   "description": "PUERTO GAITAN",
+   "id_departament": 16
+ },
+ {
+   "description": "PUERTO LOPEZ",
+   "id_departament": 16
+ },
+ {
+   "description": "PUERTO LLERAS",
+   "id_departament": 16
+ },
+ {
+   "description": "PUERTO RICO",
+   "id_departament": 16
+ },
+ {
+   "description": "RESTREPO",
+   "id_departament": 16
+ },
+ {
+   "description": "SAN CARLOS DE GUAROA",
+   "id_departament": 16
+ },
+ {
+   "description": "SAN JUAN DE ARAMA",
+   "id_departament": 16
+ },
+ {
+   "description": "SAN JUANITO",
+   "id_departament": 16
+ },
+ {
+   "description": "SAN MARTIN",
+   "id_departament": 16
+ },
+ {
+   "description": "VISTAHERMOSA",
+   "id_departament": 16
+ },
+ {
+   "description": "PASTO",
+   "id_departament": 17
+ },
+ {
+   "description": "ALBAN",
+   "id_departament": 17
+ },
+ {
+   "description": "ALDANA",
+   "id_departament": 17
+ },
+ {
+   "description": "ANCUYA",
+   "id_departament": 17
+ },
+ {
+   "description": "ARBOLEDA",
+   "id_departament": 17
+ },
+ {
+   "description": "BARBACOAS",
+   "id_departament": 17
+ },
+ {
+   "description": "BELEN",
+   "id_departament": 17
+ },
+ {
+   "description": "BUESACO",
+   "id_departament": 17
+ },
+ {
+   "description": "COLON",
+   "id_departament": 17
+ },
+ {
+   "description": "CONSACA",
+   "id_departament": 17
+ },
+ {
+   "description": "CONTADERO",
+   "id_departament": 17
+ },
+ {
+   "description": "CORDOBA",
+   "id_departament": 17
+ },
+ {
+   "description": "CUASPUD",
+   "id_departament": 17
+ },
+ {
+   "description": "CUMBAL",
+   "id_departament": 17
+ },
+ {
+   "description": "CUMBITARA",
+   "id_departament": 17
+ },
+ {
+   "description": "CHACHAGsI",
+   "id_departament": 17
+ },
+ {
+   "description": "EL CHARCO",
+   "id_departament": 17
+ },
+ {
+   "description": "EL PEÑOL",
+   "id_departament": 17
+ },
+ {
+   "description": "EL ROSARIO",
+   "id_departament": 17
+ },
+ {
+   "description": "EL TABLON DE GOMEZ",
+   "id_departament": 17
+ },
+ {
+   "description": "EL TAMBO",
+   "id_departament": 17
+ },
+ {
+   "description": "FUNES",
+   "id_departament": 17
+ },
+ {
+   "description": "GUACHUCAL",
+   "id_departament": 17
+ },
+ {
+   "description": "GUAITARILLA",
+   "id_departament": 17
+ },
+ {
+   "description": "GUALMATAN",
+   "id_departament": 17
+ },
+ {
+   "description": "ILES",
+   "id_departament": 17
+ },
+ {
+   "description": "IMUES",
+   "id_departament": 17
+ },
+ {
+   "description": "IPIALES",
+   "id_departament": 17
+ },
+ {
+   "description": "LA CRUZ",
+   "id_departament": 17
+ },
+ {
+   "description": "LA FLORIDA",
+   "id_departament": 17
+ },
+ {
+   "description": "LA LLANADA",
+   "id_departament": 17
+ },
+ {
+   "description": "LA TOLA",
+   "id_departament": 17
+ },
+ {
+   "description": "LA UNION",
+   "id_departament": 17
+ },
+ {
+   "description": "LEIVA",
+   "id_departament": 17
+ },
+ {
+   "description": "LINARES",
+   "id_departament": 17
+ },
+ {
+   "description": "LOS ANDES",
+   "id_departament": 17
+ },
+ {
+   "description": "MAGsI",
+   "id_departament": 17
+ },
+ {
+   "description": "MALLAMA",
+   "id_departament": 17
+ },
+ {
+   "description": "MOSQUERA",
+   "id_departament": 17
+ },
+ {
+   "description": "NARIÑO",
+   "id_departament": 17
+ },
+ {
+   "description": "OLAYA HERRERA",
+   "id_departament": 17
+ },
+ {
+   "description": "OSPINA",
+   "id_departament": 17
+ },
+ {
+   "description": "FRANCISCO PIZARRO",
+   "id_departament": 17
+ },
+ {
+   "description": "POLICARPA",
+   "id_departament": 17
+ },
+ {
+   "description": "POTOSI",
+   "id_departament": 17
+ },
+ {
+   "description": "PROVIDENCIA",
+   "id_departament": 17
+ },
+ {
+   "description": "PUERRES",
+   "id_departament": 17
+ },
+ {
+   "description": "PUPIALES",
+   "id_departament": 17
+ },
+ {
+   "description": "RICAURTE",
+   "id_departament": 17
+ },
+ {
+   "description": "ROBERTO PAYAN",
+   "id_departament": 17
+ },
+ {
+   "description": "SAMANIEGO",
+   "id_departament": 17
+ },
+ {
+   "description": "SANDONA",
+   "id_departament": 17
+ },
+ {
+   "description": "SAN BERNARDO",
+   "id_departament": 17
+ },
+ {
+   "description": "SAN LORENZO",
+   "id_departament": 17
+ },
+ {
+   "description": "SAN PABLO",
+   "id_departament": 17
+ },
+ {
+   "description": "SAN PEDRO DE CARTAGO",
+   "id_departament": 17
+ },
+ {
+   "description": "SANTA BARBARA",
+   "id_departament": 17
+ },
+ {
+   "description": "SANTACRUZ",
+   "id_departament": 17
+ },
+ {
+   "description": "SAPUYES",
+   "id_departament": 17
+ },
+ {
+   "description": "TAMINANGO",
+   "id_departament": 17
+ },
+ {
+   "description": "TANGUA",
+   "id_departament": 17
+ },
+ {
+   "description": "SAN ANDRES DE TUMACO",
+   "id_departament": 17
+ },
+ {
+   "description": "TUQUERRES",
+   "id_departament": 17
+ },
+ {
+   "description": "YACUANQUER",
+   "id_departament": 17
+ },
+ {
+   "description": "CUCUTA",
+   "id_departament": 18
+ },
+ {
+   "description": "ABREGO",
+   "id_departament": 18
+ },
+ {
+   "description": "ARBOLEDAS",
+   "id_departament": 18
+ },
+ {
+   "description": "BOCHALEMA",
+   "id_departament": 18
+ },
+ {
+   "description": "BUCARASICA",
+   "id_departament": 18
+ },
+ {
+   "description": "CACOTA",
+   "id_departament": 18
+ },
+ {
+   "description": "CACHIRA",
+   "id_departament": 18
+ },
+ {
+   "description": "CHINACOTA",
+   "id_departament": 18
+ },
+ {
+   "description": "CHITAGA",
+   "id_departament": 18
+ },
+ {
+   "description": "CONVENCION",
+   "id_departament": 18
+ },
+ {
+   "description": "CUCUTILLA",
+   "id_departament": 18
+ },
+ {
+   "description": "DURANIA",
+   "id_departament": 18
+ },
+ {
+   "description": "EL CARMEN",
+   "id_departament": 18
+ },
+ {
+   "description": "EL TARRA",
+   "id_departament": 18
+ },
+ {
+   "description": "EL ZULIA",
+   "id_departament": 18
+ },
+ {
+   "description": "GRAMALOTE",
+   "id_departament": 18
+ },
+ {
+   "description": "HACARI",
+   "id_departament": 18
+ },
+ {
+   "description": "HERRAN",
+   "id_departament": 18
+ },
+ {
+   "description": "LABATECA",
+   "id_departament": 18
+ },
+ {
+   "description": "LA ESPERANZA",
+   "id_departament": 18
+ },
+ {
+   "description": "LA PLAYA",
+   "id_departament": 18
+ },
+ {
+   "description": "LOS PATIOS",
+   "id_departament": 18
+ },
+ {
+   "description": "LOURDES",
+   "id_departament": 18
+ },
+ {
+   "description": "MUTISCUA",
+   "id_departament": 18
+ },
+ {
+   "description": "OCAÑA",
+   "id_departament": 18
+ },
+ {
+   "description": "PAMPLONA",
+   "id_departament": 18
+ },
+ {
+   "description": "PAMPLONITA",
+   "id_departament": 18
+ },
+ {
+   "description": "PUERTO SANTANDER",
+   "id_departament": 18
+ },
+ {
+   "description": "RAGONVALIA",
+   "id_departament": 18
+ },
+ {
+   "description": "SALAZAR",
+   "id_departament": 18
+ },
+ {
+   "description": "SAN CALIXTO",
+   "id_departament": 18
+ },
+ {
+   "description": "SAN CAYETANO",
+   "id_departament": 18
+ },
+ {
+   "description": "SANTIAGO",
+   "id_departament": 18
+ },
+ {
+   "description": "SARDINATA",
+   "id_departament": 18
+ },
+ {
+   "description": "SILOS",
+   "id_departament": 18
+ },
+ {
+   "description": "TEORAMA",
+   "id_departament": 18
+ },
+ {
+   "description": "TIBU",
+   "id_departament": 18
+ },
+ {
+   "description": "TOLEDO",
+   "id_departament": 18
+ },
+ {
+   "description": "VILLA CARO",
+   "id_departament": 18
+ },
+ {
+   "description": "VILLA DEL ROSARIO",
+   "id_departament": 18
+ },
+ {
+   "description": "ARMENIA",
+   "id_departament": 19
+ },
+ {
+   "description": "BUENAVISTA",
+   "id_departament": 19
+ },
+ {
+   "description": "CALARCA",
+   "id_departament": 19
+ },
+ {
+   "description": "CIRCASIA",
+   "id_departament": 19
+ },
+ {
+   "description": "CORDOBA",
+   "id_departament": 19
+ },
+ {
+   "description": "FILANDIA",
+   "id_departament": 19
+ },
+ {
+   "description": "GENOVA",
+   "id_departament": 19
+ },
+ {
+   "description": "LA TEBAIDA",
+   "id_departament": 19
+ },
+ {
+   "description": "MONTENEGRO",
+   "id_departament": 19
+ },
+ {
+   "description": "PIJAO",
+   "id_departament": 19
+ },
+ {
+   "description": "QUIMBAYA",
+   "id_departament": 19
+ },
+ {
+   "description": "SALENTO",
+   "id_departament": 19
+ },
+ {
+   "description": "PEREIRA",
+   "id_departament": 20
+ },
+ {
+   "description": "APIA",
+   "id_departament": 20
+ },
+ {
+   "description": "BALBOA",
+   "id_departament": 20
+ },
+ {
+   "description": "BELEN DE UMBRIA",
+   "id_departament": 20
+ },
+ {
+   "description": "DOSQUEBRADAS",
+   "id_departament": 20
+ },
+ {
+   "description": "GUATICA",
+   "id_departament": 20
+ },
+ {
+   "description": "LA CELIA",
+   "id_departament": 20
+ },
+ {
+   "description": "LA VIRGINIA",
+   "id_departament": 20
+ },
+ {
+   "description": "MARSELLA",
+   "id_departament": 20
+ },
+ {
+   "description": "MISTRATO",
+   "id_departament": 20
+ },
+ {
+   "description": "PUEBLO RICO",
+   "id_departament": 20
+ },
+ {
+   "description": "QUINCHIA",
+   "id_departament": 20
+ },
+ {
+   "description": "SANTA ROSA DE CABAL",
+   "id_departament": 20
+ },
+ {
+   "description": "SANTUARIO",
+   "id_departament": 20
+ },
+ {
+   "description": "BUCARAMANGA",
+   "id_departament": 21
+ },
+ {
+   "description": "AGUADA",
+   "id_departament": 21
+ },
+ {
+   "description": "ALBANIA",
+   "id_departament": 21
+ },
+ {
+   "description": "ARATOCA",
+   "id_departament": 21
+ },
+ {
+   "description": "BARBOSA",
+   "id_departament": 21
+ },
+ {
+   "description": "BARICHARA",
+   "id_departament": 21
+ },
+ {
+   "description": "BARRANCABERMEJA",
+   "id_departament": 21
+ },
+ {
+   "description": "BETULIA",
+   "id_departament": 21
+ },
+ {
+   "description": "BOLIVAR",
+   "id_departament": 21
+ },
+ {
+   "description": "CABRERA",
+   "id_departament": 21
+ },
+ {
+   "description": "CALIFORNIA",
+   "id_departament": 21
+ },
+ {
+   "description": "CAPITANEJO",
+   "id_departament": 21
+ },
+ {
+   "description": "CARCASI",
+   "id_departament": 21
+ },
+ {
+   "description": "CEPITA",
+   "id_departament": 21
+ },
+ {
+   "description": "CERRITO",
+   "id_departament": 21
+ },
+ {
+   "description": "CHARALA",
+   "id_departament": 21
+ },
+ {
+   "description": "CHARTA",
+   "id_departament": 21
+ },
+ {
+   "description": "CHIMA",
+   "id_departament": 21
+ },
+ {
+   "description": "CHIPATA",
+   "id_departament": 21
+ },
+ {
+   "description": "CIMITARRA",
+   "id_departament": 21
+ },
+ {
+   "description": "CONCEPCION",
+   "id_departament": 21
+ },
+ {
+   "description": "CONFINES",
+   "id_departament": 21
+ },
+ {
+   "description": "CONTRATACION",
+   "id_departament": 21
+ },
+ {
+   "description": "COROMORO",
+   "id_departament": 21
+ },
+ {
+   "description": "CURITI",
+   "id_departament": 21
+ },
+ {
+   "description": "EL CARMEN DE CHUCURI",
+   "id_departament": 21
+ },
+ {
+   "description": "EL GUACAMAYO",
+   "id_departament": 21
+ },
+ {
+   "description": "EL PEÑON",
+   "id_departament": 21
+ },
+ {
+   "description": "EL PLAYON",
+   "id_departament": 21
+ },
+ {
+   "description": "ENCINO",
+   "id_departament": 21
+ },
+ {
+   "description": "ENCISO",
+   "id_departament": 21
+ },
+ {
+   "description": "FLORIAN",
+   "id_departament": 21
+ },
+ {
+   "description": "FLORIDABLANCA",
+   "id_departament": 21
+ },
+ {
+   "description": "GALAN",
+   "id_departament": 21
+ },
+ {
+   "description": "GAMBITA",
+   "id_departament": 21
+ },
+ {
+   "description": "GIRON",
+   "id_departament": 21
+ },
+ {
+   "description": "GUACA",
+   "id_departament": 21
+ },
+ {
+   "description": "GUADALUPE",
+   "id_departament": 21
+ },
+ {
+   "description": "GUAPOTA",
+   "id_departament": 21
+ },
+ {
+   "description": "GUAVATA",
+   "id_departament": 21
+ },
+ {
+   "description": "GsEPSA",
+   "id_departament": 21
+ },
+ {
+   "description": "HATO",
+   "id_departament": 21
+ },
+ {
+   "description": "JESUS MARIA",
+   "id_departament": 21
+ },
+ {
+   "description": "JORDAN",
+   "id_departament": 21
+ },
+ {
+   "description": "LA BELLEZA",
+   "id_departament": 21
+ },
+ {
+   "description": "LANDAZURI",
+   "id_departament": 21
+ },
+ {
+   "description": "LA PAZ",
+   "id_departament": 21
+ },
+ {
+   "description": "LEBRIJA",
+   "id_departament": 21
+ },
+ {
+   "description": "LOS SANTOS",
+   "id_departament": 21
+ },
+ {
+   "description": "MACARAVITA",
+   "id_departament": 21
+ },
+ {
+   "description": "MALAGA",
+   "id_departament": 21
+ },
+ {
+   "description": "MATANZA",
+   "id_departament": 21
+ },
+ {
+   "description": "MOGOTES",
+   "id_departament": 21
+ },
+ {
+   "description": "MOLAGAVITA",
+   "id_departament": 21
+ },
+ {
+   "description": "OCAMONTE",
+   "id_departament": 21
+ },
+ {
+   "description": "OIBA",
+   "id_departament": 21
+ },
+ {
+   "description": "ONZAGA",
+   "id_departament": 21
+ },
+ {
+   "description": "PALMAR",
+   "id_departament": 21
+ },
+ {
+   "description": "PALMAS DEL SOCORRO",
+   "id_departament": 21
+ },
+ {
+   "description": "PARAMO",
+   "id_departament": 21
+ },
+ {
+   "description": "PIEDECUESTA",
+   "id_departament": 21
+ },
+ {
+   "description": "PINCHOTE",
+   "id_departament": 21
+ },
+ {
+   "description": "PUENTE NACIONAL",
+   "id_departament": 21
+ },
+ {
+   "description": "PUERTO PARRA",
+   "id_departament": 21
+ },
+ {
+   "description": "PUERTO WILCHES",
+   "id_departament": 21
+ },
+ {
+   "description": "RIONEGRO",
+   "id_departament": 21
+ },
+ {
+   "description": "SABANA DE TORRES",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN ANDRES",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN BENITO",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN GIL",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN JOAQUIN",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN JOSE DE MIRANDA",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN MIGUEL",
+   "id_departament": 21
+ },
+ {
+   "description": "SAN VICENTE DE CHUCURI",
+   "id_departament": 21
+ },
+ {
+   "description": "SANTA BARBARA",
+   "id_departament": 21
+ },
+ {
+   "description": "SANTA HELENA DEL OPON",
+   "id_departament": 21
+ },
+ {
+   "description": "SIMACOTA",
+   "id_departament": 21
+ },
+ {
+   "description": "SOCORRO",
+   "id_departament": 21
+ },
+ {
+   "description": "SUAITA",
+   "id_departament": 21
+ },
+ {
+   "description": "SUCRE",
+   "id_departament": 21
+ },
+ {
+   "description": "SURATA",
+   "id_departament": 21
+ },
+ {
+   "description": "TONA",
+   "id_departament": 21
+ },
+ {
+   "description": "VALLE DE SAN JOSE",
+   "id_departament": 21
+ },
+ {
+   "description": "VELEZ",
+   "id_departament": 21
+ },
+ {
+   "description": "VETAS",
+   "id_departament": 21
+ },
+ {
+   "description": "VILLANUEVA",
+   "id_departament": 21
+ },
+ {
+   "description": "ZAPATOCA",
+   "id_departament": 21
+ },
+ {
+   "description": "SINCELEJO",
+   "id_departament": 22
+ },
+ {
+   "description": "BUENAVISTA",
+   "id_departament": 22
+ },
+ {
+   "description": "CAIMITO",
+   "id_departament": 22
+ },
+ {
+   "description": "COLOSO",
+   "id_departament": 22
+ },
+ {
+   "description": "COROZAL",
+   "id_departament": 22
+ },
+ {
+   "description": "COVEÑAS",
+   "id_departament": 22
+ },
+ {
+   "description": "CHALAN",
+   "id_departament": 22
+ },
+ {
+   "description": "EL ROBLE",
+   "id_departament": 22
+ },
+ {
+   "description": "GALERAS",
+   "id_departament": 22
+ },
+ {
+   "description": "GUARANDA",
+   "id_departament": 22
+ },
+ {
+   "description": "LA UNION",
+   "id_departament": 22
+ },
+ {
+   "description": "LOS PALMITOS",
+   "id_departament": 22
+ },
+ {
+   "description": "MAJAGUAL",
+   "id_departament": 22
+ },
+ {
+   "description": "MORROA",
+   "id_departament": 22
+ },
+ {
+   "description": "OVEJAS",
+   "id_departament": 22
+ },
+ {
+   "description": "PALMITO",
+   "id_departament": 22
+ },
+ {
+   "description": "SAMPUES",
+   "id_departament": 22
+ },
+ {
+   "description": "SAN BENITO ABAD",
+   "id_departament": 22
+ },
+ {
+   "description": "SAN JUAN DE BETULIA",
+   "id_departament": 22
+ },
+ {
+   "description": "SAN MARCOS",
+   "id_departament": 22
+ },
+ {
+   "description": "SAN ONOFRE",
+   "id_departament": 22
+ },
+ {
+   "description": "SAN PEDRO",
+   "id_departament": 22
+ },
+ {
+   "description": "SAN LUIS DE SINCE",
+   "id_departament": 22
+ },
+ {
+   "description": "SUCRE",
+   "id_departament": 22
+ },
+ {
+   "description": "SANTIAGO DE TOLU",
+   "id_departament": 22
+ },
+ {
+   "description": "TOLU VIEJO",
+   "id_departament": 22
+ },
+ {
+   "description": "IBAGUE",
+   "id_departament": 23
+ },
+ {
+   "description": "ALPUJARRA",
+   "id_departament": 23
+ },
+ {
+   "description": "ALVARADO",
+   "id_departament": 23
+ },
+ {
+   "description": "AMBALEMA",
+   "id_departament": 23
+ },
+ {
+   "description": "ANZOATEGUI",
+   "id_departament": 23
+ },
+ {
+   "description": "ARMERO",
+   "id_departament": 23
+ },
+ {
+   "description": "ATACO",
+   "id_departament": 23
+ },
+ {
+   "description": "CAJAMARCA",
+   "id_departament": 23
+ },
+ {
+   "description": "CARMEN DE APICALA",
+   "id_departament": 23
+ },
+ {
+   "description": "CASABIANCA",
+   "id_departament": 23
+ },
+ {
+   "description": "CHAPARRAL",
+   "id_departament": 23
+ },
+ {
+   "description": "COELLO",
+   "id_departament": 23
+ },
+ {
+   "description": "COYAIMA",
+   "id_departament": 23
+ },
+ {
+   "description": "CUNDAY",
+   "id_departament": 23
+ },
+ {
+   "description": "DOLORES",
+   "id_departament": 23
+ },
+ {
+   "description": "ESPINAL",
+   "id_departament": 23
+ },
+ {
+   "description": "FALAN",
+   "id_departament": 23
+ },
+ {
+   "description": "FLANDES",
+   "id_departament": 23
+ },
+ {
+   "description": "FRESNO",
+   "id_departament": 23
+ },
+ {
+   "description": "GUAMO",
+   "id_departament": 23
+ },
+ {
+   "description": "HERVEO",
+   "id_departament": 23
+ },
+ {
+   "description": "HONDA",
+   "id_departament": 23
+ },
+ {
+   "description": "ICONONZO",
+   "id_departament": 23
+ },
+ {
+   "description": "LERIDA",
+   "id_departament": 23
+ },
+ {
+   "description": "LIBANO",
+   "id_departament": 23
+ },
+ {
+   "description": "MARIQUITA",
+   "id_departament": 23
+ },
+ {
+   "description": "MELGAR",
+   "id_departament": 23
+ },
+ {
+   "description": "MURILLO",
+   "id_departament": 23
+ },
+ {
+   "description": "NATAGAIMA",
+   "id_departament": 23
+ },
+ {
+   "description": "ORTEGA",
+   "id_departament": 23
+ },
+ {
+   "description": "PALOCABILDO",
+   "id_departament": 23
+ },
+ {
+   "description": "PIEDRAS",
+   "id_departament": 23
+ },
+ {
+   "description": "PLANADAS",
+   "id_departament": 23
+ },
+ {
+   "description": "PRADO",
+   "id_departament": 23
+ },
+ {
+   "description": "PURIFICACION",
+   "id_departament": 23
+ },
+ {
+   "description": "RIOBLANCO",
+   "id_departament": 23
+ },
+ {
+   "description": "RONCESVALLES",
+   "id_departament": 23
+ },
+ {
+   "description": "ROVIRA",
+   "id_departament": 23
+ },
+ {
+   "description": "SALDAÑA",
+   "id_departament": 23
+ },
+ {
+   "description": "SAN ANTONIO",
+   "id_departament": 23
+ },
+ {
+   "description": "SAN LUIS",
+   "id_departament": 23
+ },
+ {
+   "description": "SANTA ISABEL",
+   "id_departament": 23
+ },
+ {
+   "description": "SUAREZ",
+   "id_departament": 23
+ },
+ {
+   "description": "VALLE DE SAN JUAN",
+   "id_departament": 23
+ },
+ {
+   "description": "VENADILLO",
+   "id_departament": 23
+ },
+ {
+   "description": "VILLAHERMOSA",
+   "id_departament": 23
+ },
+ {
+   "description": "VILLARRICA",
+   "id_departament": 23
+ },
+ {
+   "description": "CALI",
+   "id_departament": 24
+ },
+ {
+   "description": "ALCALA",
+   "id_departament": 24
+ },
+ {
+   "description": "ANDALUCIA",
+   "id_departament": 24
+ },
+ {
+   "description": "ANSERMANUEVO",
+   "id_departament": 24
+ },
+ {
+   "description": "ARGELIA",
+   "id_departament": 24
+ },
+ {
+   "description": "BOLIVAR",
+   "id_departament": 24
+ },
+ {
+   "description": "BUENAVENTURA",
+   "id_departament": 24
+ },
+ {
+   "description": "GUADALAJARA DE BUGA",
+   "id_departament": 24
+ },
+ {
+   "description": "BUGALAGRANDE",
+   "id_departament": 24
+ },
+ {
+   "description": "CAICEDONIA",
+   "id_departament": 24
+ },
+ {
+   "description": "CALIMA",
+   "id_departament": 24
+ },
+ {
+   "description": "CANDELARIA",
+   "id_departament": 24
+ },
+ {
+   "description": "CARTAGO",
+   "id_departament": 24
+ },
+ {
+   "description": "DAGUA",
+   "id_departament": 24
+ },
+ {
+   "description": "EL AGUILA",
+   "id_departament": 24
+ },
+ {
+   "description": "EL CAIRO",
+   "id_departament": 24
+ },
+ {
+   "description": "EL CERRITO",
+   "id_departament": 24
+ },
+ {
+   "description": "EL DOVIO",
+   "id_departament": 24
+ },
+ {
+   "description": "FLORIDA",
+   "id_departament": 24
+ },
+ {
+   "description": "GINEBRA",
+   "id_departament": 24
+ },
+ {
+   "description": "GUACARI",
+   "id_departament": 24
+ },
+ {
+   "description": "JAMUNDI",
+   "id_departament": 24
+ },
+ {
+   "description": "LA CUMBRE",
+   "id_departament": 24
+ },
+ {
+   "description": "LA UNION",
+   "id_departament": 24
+ },
+ {
+   "description": "LA VICTORIA",
+   "id_departament": 24
+ },
+ {
+   "description": "OBANDO",
+   "id_departament": 24
+ },
+ {
+   "description": "PALMIRA",
+   "id_departament": 24
+ },
+ {
+   "description": "PRADERA",
+   "id_departament": 24
+ },
+ {
+   "description": "RESTREPO",
+   "id_departament": 24
+ },
+ {
+   "description": "RIOFRIO",
+   "id_departament": 24
+ },
+ {
+   "description": "ROLDANILLO",
+   "id_departament": 24
+ },
+ {
+   "description": "SAN PEDRO",
+   "id_departament": 24
+ },
+ {
+   "description": "SEVILLA",
+   "id_departament": 24
+ },
+ {
+   "description": "TORO",
+   "id_departament": 24
+ },
+ {
+   "description": "TRUJILLO",
+   "id_departament": 24
+ },
+ {
+   "description": "TULUA",
+   "id_departament": 24
+ },
+ {
+   "description": "ULLOA",
+   "id_departament": 24
+ },
+ {
+   "description": "VERSALLES",
+   "id_departament": 24
+ },
+ {
+   "description": "VIJES",
+   "id_departament": 24
+ },
+ {
+   "description": "YOTOCO",
+   "id_departament": 24
+ },
+ {
+   "description": "YUMBO",
+   "id_departament": 24
+ },
+ {
+   "description": "ZARZAL",
+   "id_departament": 24
+ },
+ {
+   "description": "ARAUCA",
+   "id_departament": 25
+ },
+ {
+   "description": "ARAUQUITA",
+   "id_departament": 25
+ },
+ {
+   "description": "CRAVO NORTE",
+   "id_departament": 25
+ },
+ {
+   "description": "FORTUL",
+   "id_departament": 25
+ },
+ {
+   "description": "PUERTO RONDON",
+   "id_departament": 25
+ },
+ {
+   "description": "SARAVENA",
+   "id_departament": 25
+ },
+ {
+   "description": "TAME",
+   "id_departament": 25
+ },
+ {
+   "description": "YOPAL",
+   "id_departament": 26
+ },
+ {
+   "description": "AGUAZUL",
+   "id_departament": 26
+ },
+ {
+   "description": "CHAMEZA",
+   "id_departament": 26
+ },
+ {
+   "description": "HATO COROZAL",
+   "id_departament": 26
+ },
+ {
+   "description": "LA SALINA",
+   "id_departament": 26
+ },
+ {
+   "description": "MANI",
+   "id_departament": 26
+ },
+ {
+   "description": "MONTERREY",
+   "id_departament": 26
+ },
+ {
+   "description": "NUNCHIA",
+   "id_departament": 26
+ },
+ {
+   "description": "OROCUE",
+   "id_departament": 26
+ },
+ {
+   "description": "PAZ DE ARIPORO",
+   "id_departament": 26
+ },
+ {
+   "description": "PORE",
+   "id_departament": 26
+ },
+ {
+   "description": "RECETOR",
+   "id_departament": 26
+ },
+ {
+   "description": "SABANALARGA",
+   "id_departament": 26
+ },
+ {
+   "description": "SACAMA",
+   "id_departament": 26
+ },
+ {
+   "description": "SAN LUIS DE PALENQUE",
+   "id_departament": 26
+ },
+ {
+   "description": "TAMARA",
+   "id_departament": 26
+ },
+ {
+   "description": "TAURAMENA",
+   "id_departament": 26
+ },
+ {
+   "description": "TRINIDAD",
+   "id_departament": 26
+ },
+ {
+   "description": "VILLANUEVA",
+   "id_departament": 26
+ },
+ {
+   "description": "MOCOA",
+   "id_departament": 27
+ },
+ {
+   "description": "COLON",
+   "id_departament": 27
+ },
+ {
+   "description": "ORITO",
+   "id_departament": 27
+ },
+ {
+   "description": "PUERTO ASIS",
+   "id_departament": 27
+ },
+ {
+   "description": "PUERTO CAICEDO",
+   "id_departament": 27
+ },
+ {
+   "description": "PUERTO GUZMAN",
+   "id_departament": 27
+ },
+ {
+   "description": "LEGUIZAMO",
+   "id_departament": 27
+ },
+ {
+   "description": "SIBUNDOY",
+   "id_departament": 27
+ },
+ {
+   "description": "SAN FRANCISCO",
+   "id_departament": 27
+ },
+ {
+   "description": "SAN MIGUEL",
+   "id_departament": 27
+ },
+ {
+   "description": "SANTIAGO",
+   "id_departament": 27
+ },
+ {
+   "description": "VALLE DEL GUAMUEZ",
+   "id_departament": 27
+ },
+ {
+   "description": "VILLAGARZON",
+   "id_departament": 27
+ },
+ {
+   "description": "SAN ANDRES",
+   "id_departament": 28
+ },
+ {
+   "description": "PROVIDENCIA",
+   "id_departament": 28
+ },
+ {
+   "description": "LETICIA",
+   "id_departament": 28
+ },
+ {
+   "description": "EL ENCANTO",
+   "id_departament": 28
+ },
+ {
+   "description": "LA CHORRERA",
+   "id_departament": 28
+ },
+ {
+   "description": "LA PEDRERA",
+   "id_departament": 28
+ },
+ {
+   "description": "LA VICTORIA",
+   "id_departament": 28
+ },
+ {
+   "description": "MIRITI - PARANA",
+   "id_departament": 28
+ },
+ {
+   "description": "PUERTO ALEGRIA",
+   "id_departament": 28
+ },
+ {
+   "description": "PUERTO ARICA",
+   "id_departament": 28
+ },
+ {
+   "description": "PUERTO NARIÑO",
+   "id_departament": 28
+ },
+ {
+   "description": "PUERTO SANTANDER",
+   "id_departament": 28
+ },
+ {
+   "description": "TARAPACA",
+   "id_departament": 28
+ },
+ {
+   "description": "INIRIDA",
+   "id_departament": 29
+ },
+ {
+   "description": "BARRANCO MINAS",
+   "id_departament": 29
+ },
+ {
+   "description": "MAPIRIPANA",
+   "id_departament": 29
+ },
+ {
+   "description": "SAN FELIPE",
+   "id_departament": 29
+ },
+ {
+   "description": "PUERTO COLOMBIA",
+   "id_departament": 29
+ },
+ {
+   "description": "LA GUADALUPE",
+   "id_departament": 29
+ },
+ {
+   "description": "CACAHUAL",
+   "id_departament": 29
+ },
+ {
+   "description": "PANA PANA",
+   "id_departament": 29
+ },
+ {
+   "description": "MORICHAL",
+   "id_departament": 29
+ },
+ {
+   "description": "SAN JOSE DEL GUAVIARE",
+   "id_departament": 30
+ },
+ {
+   "description": "CALAMAR",
+   "id_departament": 30
+ },
+ {
+   "description": "EL RETORNO",
+   "id_departament": 30
+ },
+ {
+   "description": "MIRAFLORES",
+   "id_departament": 30
+ },
+ {
+   "description": "MITU",
+   "id_departament": 31
+ },
+ {
+   "description": "CARURU",
+   "id_departament": 31
+ },
+ {
+   "description": "PACOA",
+   "id_departament": 31
+ },
+ {
+   "description": "TARAIRA",
+   "id_departament": 31
+ },
+ {
+   "description": "PAPUNAUA",
+   "id_departament": 31
+ },
+ {
+   "description": "YAVARATE",
+   "id_departament": 31
+ },
+ {
+   "description": "PUERTO CARREÑO",
+   "id_departament": 32
+ },
+ {
+   "description": "LA PRIMAVERA",
+   "id_departament": 32
+ },
+ {
+   "description": "SANTA ROSALIA",
+   "id_departament": 32
+ },
+ {
+   "description": "CUMARIBO",
+   "id_departament": 32
+ }
+]

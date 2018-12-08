@@ -1,0 +1,18 @@
+[
+ {
+   "it_represents": "Activo",
+   "label": "Active"
+ },
+ {
+   "it_represents": "Inactivo",
+   "label": "Inactive"
+ },
+ {
+   "it_represents": "Destacado",
+   "label": "Outstanding"
+ },
+ {
+   "it_represents": "Eliminado",
+   "label": "Deleted"
+ }
+]

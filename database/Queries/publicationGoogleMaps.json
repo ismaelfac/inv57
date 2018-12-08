@@ -1,0 +1,14 @@
+[
+ {
+   "it_represents": "No publicar",
+   "label": "Do not post"
+ },
+ {
+   "it_represents": "Publicar zona",
+   "label": "Post area"
+ },
+ {
+   "it_represents": "Publicar punto exacto",
+   "label": "Post exact point"
+ }
+]

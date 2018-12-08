@@ -1,0 +1,18 @@
+[
+ {
+   "it_represents": "Nuevo",
+   "label": "New"
+ },
+ {
+   "it_represents": "Usado",
+   "label": "Used"
+ },
+ {
+   "it_represents": "Proyecto",
+   "label": "Project"
+ },
+ {
+   "it_represents": "En Construccion",
+   "label": "Under construction"
+ }
+]

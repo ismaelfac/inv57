@@ -1,0 +1,38 @@
+[
+ {
+   "it_represents": "Estrato 1",
+   "label": 1
+ },
+ {
+   "it_represents": "Estrato 2",
+   "label": 2
+ },
+ {
+   "it_represents": "Estrato 3",
+   "label": 3
+ },
+ {
+   "it_represents": "Estrato 4",
+   "label": 4
+ },
+ {
+   "it_represents": "Estrato 5",
+   "label": 5
+ },
+ {
+   "it_represents": "Estrato 6",
+   "label": 6
+ },
+ {
+   "it_represents": "Estrato rural",
+   "label": "Rural"
+ },
+ {
+   "it_represents": "Estrato comercial",
+   "label": "Commercial"
+ },
+ {
+   "it_represents": "N.N",
+   "label": 0
+ }
+]
