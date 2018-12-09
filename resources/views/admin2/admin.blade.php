@@ -83,9 +83,10 @@
               <h6 class="dropdown-header">Login Screens:</h6>
               @can('users.index')<a class="dropdown-item" href="{{ url('users') }}">usuarios</a>@endcan
               @can('roles.index')<a class="dropdown-item" href="{{ url('roles') }}">Roles</a>@endcan
-              @can('permisos.index')<a class="dropdown-item" href="{{ url('permissions') }}">Permisos</a>@endcan
+              @can('permissions.index')<a class="dropdown-item" href="{{ url('permissions') }}">Permisos</a>@endcan
               <div class="dropdown-divider"></div>
               <h6 class="dropdown-header">Otros Modulos:</h6>
+              @can('clients.index')<a class="dropdown-item" href="{{ url('clients') }}">Clientes</a>@endcan
             </div>
           </li>
           

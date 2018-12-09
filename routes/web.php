@@ -29,6 +29,6 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('users', 'UserController')->middleware('has.permission:users.index');
     Route::resource('roles', 'RoleController')->middleware('has.permission:roles.index');
     Route::resource('permissions', 'PermissionController')->middleware('has.permission:permissions.index');
-    Route::get('clients', 'ClientController@index')->name('clients.index');
+    Route::resource('clients', 'ClientController')->middleware('has.permission:clients.index');
     Route::get('panel', 'Admin\PortalController@index')->middleware('has.permission:panel');
 });

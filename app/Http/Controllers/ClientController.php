@@ -6,34 +6,22 @@ use Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Caffeinated\Shinobi\Models\Role;
-use App\Client as Client;
+use App\Client;
 
 class ClientController extends Controller
 {
     public function __construct()
     {
+        $this->middleware('auth');
     }
 
     public function index()
     {
-        if(Auth::user())
-        {
-            return view('modules.clients');
-
-        }else{
-            return redirect('/home');
-        }
-
+        //$clients = Client::orderBy('updated_at', 'DESC')->paginate(3);
+        $clients = Client::getClientsAttribute('web');
+        dd(json_encode($clients));
+        return view('admin2.modules.clients.index', compact('clients'));
     }
-
-    public function getClients($per_page)
-    {
-        $clients = Client::getClientsAttribute();
-        dd($clients);
-        return response()->json($clients);
-
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -41,7 +29,8 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        $clients = Client::getClientsAttribute();
+        return view('admin2.modules.clients.create');
     }
 
     /**
@@ -50,29 +39,11 @@ class ClientController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Client $client)
     {
-        //dd('Store Entro');
-        $client = new Client;
-        //dd($request->all());
-        $v = \Validator::make($request->all(), [
-            
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'email'    => 'required|email|unique:clients',
-            'type_dni' => 'required',
-            'dni' => 'required'
-        ]);
- 
-        if ($v->fails())
-        {
-            return response()->json($v->errors());
-        }else{            
-            dd('paso validacion, vamos vas bien! :)');
-            $client->create($request->all());
-            $clients = Client::all();
-            return response()->json($clients);
-        }
+        $client = Client::create($request::all());
+        $client->roles()->sync($request->get('roles')); //update roles
+        return redirect()->route('clients.edit', $client->id)->with('info', 'Usuario Guardado con Exito');
     }
 
     /**
@@ -81,10 +52,17 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Client $client)
     {
-        //
+        $roles_unique = ($client->isAdministrador() ? $this->getRoles_inv() : Role::find($client));
+        //dd($roles_unique);
+        return view('admin2.modules.clients.show', compact('user', 'roles_unique', 'roles_personalized'));
     }
+    public function getRoles_inv()
+    {
+        return Role::where('special', 'all-access')->orWhere('special', 'no-access')->get();
+    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -92,11 +70,11 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Client $client)
     {
-        //dd("entro al edit");
-        $client = Client::findOrFail($id);
-        //(!$client)? abort(404, 'Usuario no encontrado'): $client; 
+        $roles_unique = ($client->isAdministrador() ? $this->getRoles_inv() : Role::find($client));
+        $roles_personalized = Role::where('special', null)->paginate(5);
+        return view('admin2.modules.clients.edit', compact('user', 'roles_unique', 'roles_personalized'));
     }
 
     /**
@@ -106,9 +84,11 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Client $client)
     {
-        //
+        $client->update($request->all()); //update user
+        $client->roles()->sync($request->get('roles')); //update roles
+        return redirect()->route('clients.index', $client->id)->with('info', 'Usuario Actualizado con Exito');
     }
 
     /**
@@ -117,8 +97,14 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Client $client)
     {
-        //
+        if ($client->active) {
+            $client->update(['active' => false]);
+            return back()->with('info', 'Cliente Desactivado Correctamente');
+        } else {
+            $client->update(['active' => true]);
+            return back()->with('info', 'Cliente Activado Correctamente');
+        }
     }
 }
