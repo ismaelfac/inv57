@@ -17,7 +17,8 @@ class RoleController extends Controller
     public function index()
     {
         $roles = Role::paginate();
-        return view('roles.index', compact('roles'));
+        $permissions = Permission::paginate();
+        return view('admin2.modules.roles.index', compact('roles', 'permissions'));
     }
 
     /**
@@ -27,8 +28,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $permissions = Permission::get();
-        return view('roles.create',compact('permissions'));
+        $permissions = Permission::paginate(5);
+        return view('admin2.modules.roles.create', compact('permissions'));
     }
 
     /**
@@ -41,7 +42,7 @@ class RoleController extends Controller
     {
         $role = Role::create($request->all()); //update roles
         $user->permissions()->sync($request->get('permissions')); //update permissions
-        return redirect()->route('roles.edit', $role->id)->with('info','Role actualizado con exito');
+        return redirect()->route('roles.edit', $role->id)->with('info', 'Role actualizado con exito');
     }
 
     /**
@@ -52,7 +53,7 @@ class RoleController extends Controller
      */
     public function show(Role $role)
     {
-        return view('roles.show', compact('role'));
+        return view('admin2.modules.roles.show', compact('role'));
     }
 
     /**
@@ -64,7 +65,7 @@ class RoleController extends Controller
     public function edit(Role $role)
     {
         $permissions = Permission::get();
-        return view('roles.edit', compact('role', 'permissions'));
+        return view('admin2.modules.roles.edit', compact('role', 'permissions'));
     }
 
     /**
@@ -78,7 +79,7 @@ class RoleController extends Controller
     {
         $role->update($request->all()); //update roles
         $user->permissions()->sync($request->get('permissions')); //update permissions
-        return redirect()->route('roles.edit', $role->id)->with('info','Role actualizado con exito');
+        return redirect()->route('roles.edit', $role->id)->with('info', 'Role actualizado con exito');
     }
 
     /**
@@ -89,6 +90,6 @@ class RoleController extends Controller
      */
     public function destroy(Role $role)
     {
-        
+
     }
 }

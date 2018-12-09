@@ -2,7 +2,7 @@
 @section('content')
 <div class="card">
     <div class="card border-secondary mb-3">
-    <div class="card-header">Crear Usuario
+    <div class="card-header">Crear Rol
         <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
             <a href="{{ route('users.index') }}" class="btn btn-outline-danger"> Cancelar</a>
         </div>
@@ -11,37 +11,28 @@
         {!! Form::open(['route' => ['users.store']]) !!}
            <div class="form-row">
                 <div class="form-group col-md-6">
-                <label class="sr-only" for="inlineFormInputGroupUsername2">Nombres Completos</label>
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Nombre</label>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
-                        <div class="input-group-text">Nombres Completos</div>
+                        <div class="input-group-text">Nombre</div>
                         </div>
-                        <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Nombres" value="{{ old('name') }}"> 
+                        <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Nombre" value="{{ old('name') }}"> 
                     </div>
                 </div>
                 <div class="form-group col-md-6">
-                <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Detalle</label>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
+                        <div class="input-group-text">Detalle</div>
                         </div>
-                        <input type="text" name="email" class="form-control" id="inlineFormInputGroupUsername2" value="{{ old('email') }}" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword2" class="sr-only">Password</label>
-                    <div class="input-group mb-2 mr-sm-2">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">Contraseña</div>
-                        </div>
-                        <input type="password" name="password" class="form-control" id="inputPassword2" placeholder="Password" value="{{ old('password' )}}">
+                        <input type="text" name="description" class="form-control" id="inlineFormInputGroupUsername2" value="{{ old('description') }}" placeholder="Describa la función de este rol">
                     </div>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword2" class="sr-only">Estado del Usuario</label>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
-                        <div class="input-group-text">Estado del Usuario</div>
+                        <div class="input-group-text">Roles Unicos </div>
                             <div class="form-check form-check-inline">
                                 {{ Form::radio('special', 'all-access')}}<label class="form-check-label" for="exampleRadios1">
                                 Acceso total
@@ -56,22 +47,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group col-md-6">
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Detalle</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">Detalle</div>
+                        </div>
+                        <input type="text" name="description" class="form-control" id="inlineFormInputGroupUsername2" value="{{ old('description') }}" placeholder="Describa la función de este rol">
+                    </div>
+                </div>
                 <div class="card">
                     <div class="card border-light mb-3">
-                    <div class="card-header">Roles Personalizados</div>
+                    <div class="card-header">Roles Unicos</div>
                     <div class="card-body">
                         <div class="list-group">
-                            @foreach ($roles_personalized as $role_personalized )
+                            @foreach ($permissions as $permission )
                             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1"><small>{!! Form::checkbox('roles_personalized[]', $role_personalized->id, null) !!}</small> {{ $role_personalized->name}}</h5>
-                                <small><button href="{{ route('permissions.show', $role_personalized->id) }}" class="btn btn-outline-info btn-sm">Ver Permisos</button></small>
+                                <h5 class="mb-1"><small>{!! Form::checkbox('permissions[]', $permission->id, null) !!}</small> {{ $permission->name}}</h5>
+                                <small>({{ $permission->description ?: 'N/A' }})</small>
                                 </div>
-                                <p class="mb-1">({{ $role_personalized->description ?: 'N/A' }})</p>
                             </a>
                             @endforeach
                         </div><hr>
-                        {{ $roles_personalized->render() }}
+                        {{ $permissions->render() }}
                     </div>
                     </div>
                 </div>
