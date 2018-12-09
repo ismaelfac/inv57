@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+
 use Caffeinated\Shinobi\Traits\ShinobiTrait;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -17,7 +18,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','is_active'
+        'name', 'email', 'password', 'entry', 'is_active'
     ];
     protected $casts = [
         'is_active' => 'boolean',

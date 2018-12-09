@@ -15,8 +15,8 @@
             <thead>
                 <tr>
                     <th width="10px">ID</th>
-                    <th>Nommbre</th>
-                    <th>description</th>
+                    <th>Nombre</th>
+                    <th>Detalle</th>
                     <th>Actualizado</th>
                     <th>&nbsp;</th>
                 </tr>

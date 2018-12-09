@@ -18,7 +18,7 @@ class UserController extends Controller
     public function index()
     {
         $id = Auth::id();
-        $users = User::where('id', '<>', 1)->where('id', '<>', $id)->orderBy('created_at', 'DESC')->paginate(3);
+        $users = User::where('id', '<>', 1)->where('id', '<>', $id)->orderBy('updated_at', 'DESC')->paginate(3);
         $title = "Listado de Usuarios";
         return view('admin2.modules.users.index', compact('users', 'title'));
     }
@@ -40,9 +40,10 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, User $user)
     {
         $user = User::create($request::all());
+        $user->roles()->sync($request->get('roles')); //update roles
         return redirect()->route('users.edit', $user->id)->with('info', 'Usuario Guardado con Exito');
     }
 
@@ -72,7 +73,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        $roles_unique = $this->getRoles_inv();
+        $roles_unique = ($user->isAdministrador() ? $this->getRoles_inv() : Role::find($user));
         $roles_personalized = Role::where('special', null)->paginate(5);
         return view('admin2.modules.users.edit', compact('user', 'roles_unique', 'roles_personalized'));
     }
@@ -86,9 +87,9 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $user->update($request::all()); //update user
+        $user->update($request->all()); //update user
         $user->roles()->sync($request->get('roles')); //update roles
-        return redirect()->route('users.edit', $user->id)->with('info', 'Usuario Actualizado con Exito');
+        return redirect()->route('users.index', $user->id)->with('info', 'Usuario Actualizado con Exito');
     }
 
     /**

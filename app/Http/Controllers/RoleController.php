@@ -16,9 +16,8 @@ class RoleController extends Controller
 
     public function index()
     {
-        $roles = Role::paginate();
-        $permissions = Permission::paginate();
-        return view('admin2.modules.roles.index', compact('roles', 'permissions'));
+        $roles = Role::orderBy('updated_at', 'DESC')->paginate(5);
+        return view('admin2.modules.roles.index', compact('roles'));
     }
 
     /**
@@ -40,9 +39,13 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        $role = Role::create($request->all()); //update roles
-        $user->permissions()->sync($request->get('permissions')); //update permissions
-        return redirect()->route('roles.edit', $role->id)->with('info', 'Role actualizado con exito');
+        $role = Role::create([
+            'name' => $request['name'],
+            'description' => $request['description'],
+            'slug' => strtolower($request['description'])
+        ]); //update roles
+        $role->permissions()->sync($request->get('permissions')); //update permissions
+        return redirect()->route('roles.index', $role->id)->with('info', 'Role actualizado con exito');
     }
 
     /**
@@ -53,7 +56,8 @@ class RoleController extends Controller
      */
     public function show(Role $role)
     {
-        return view('admin2.modules.roles.show', compact('role'));
+        $permissions = Permission::paginate(5);
+        return view('admin2.modules.roles.show', compact('role', 'permissions'));
     }
 
     /**
@@ -64,7 +68,7 @@ class RoleController extends Controller
      */
     public function edit(Role $role)
     {
-        $permissions = Permission::get();
+        $permissions = Permission::paginate(5);
         return view('admin2.modules.roles.edit', compact('role', 'permissions'));
     }
 
@@ -78,8 +82,8 @@ class RoleController extends Controller
     public function update(Request $request, Role $role)
     {
         $role->update($request->all()); //update roles
-        $user->permissions()->sync($request->get('permissions')); //update permissions
-        return redirect()->route('roles.edit', $role->id)->with('info', 'Role actualizado con exito');
+        $role->permissions()->sync($request->get('permissions')); //update permissions
+        return redirect()->route('roles.index', $role->id)->with('info', 'Role actualizado con exito');
     }
 
     /**
@@ -90,6 +94,7 @@ class RoleController extends Controller
      */
     public function destroy(Role $role)
     {
-
+        $role->delete();
+        return back()->with('info', 'Eliminado Correctamente');
     }
 }
