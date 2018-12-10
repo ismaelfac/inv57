@@ -15,7 +15,8 @@ class CreateGalleriesTable extends Migration
     {
         Schema::create('galleries', function (Blueprint $table) {
             $table->string('id')->unique()->nullable($value = true);
-            $table->integer('property_id')->unsigned();
+            $table->string('id_gallery')->nullable();
+            $table->string('id_image')->nullable();
             $table->string('url')->nullable($value = true);
             $table->string('description')->nullable($value = true);
             $table->integer('position')->nullable($value = true);

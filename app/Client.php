@@ -44,6 +44,7 @@ class Client extends Model
     }
     //public function getCreatedAtAttribute($date) { return Carbon::createFromFormat('Ymd H:i:s', $date)->format('Ym-d'); } 
     //public function getUpdatedAtAttribute($date) { return Carbon::createFromFormat('Ymd H:i:s', $date)->format('Ym-d'); } 
+
     public static function getClientsAttribute($entry)
     {
         $list = array();

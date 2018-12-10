@@ -2,136 +2,313 @@
   {
     "name": "Inicio",
     "slug": "home",
-    "description": "Ver el home"
+    "description": "Ver el home",
+    "is_system": 0
   },
   {
     "name": "Panel",
     "slug": "parameters",
-    "description": "Ver el panel"
+    "description": "Ver el panel",
+    "is_system": 1
   },
   {
     "name": "Navegar Usuarios",
     "slug": "users.index",
-    "description": "Lista los usuarios del sistema"
+    "description": "Lista los usuarios del sistema",
+    "is_system": 1
   },
   {
     "name": "Crear Usuarios",
     "slug": "users.create",
-    "description": "Puede crear los usuarios del sistema"
+    "description": "Puede crear los usuarios del sistema",
+    "is_system": 1
   },
   {
     "name": "Ver detalle de Usuarios",
     "slug": "users.show",
-    "description": "Ver el detalle de los usuarios del sistema"
+    "description": "Ver el detalle de los usuarios del sistema",
+    "is_system": 1
   },
   {
     "name": "Edición de Usuarios",
     "slug": "users.edit",
-    "description": "Editar los usuarios del sistema"
+    "description": "Editar los usuarios del sistema",
+    "is_system": 1
   },
   {
     "name": "Eliminar Usuarios",
     "slug": "users.destroy",
-    "description": "Eliminar los usuarios del sistema"
+    "description": "Eliminar los usuarios del sistema",
+    "is_system": 1
   },
   {
     "name": "Navegar Roles",
     "slug": "roles.index",
-    "description": "Lista los roles del sistema"
+    "description": "Lista los roles del sistema",
+    "is_system": 1
   },
   {
     "name": "Crear roles",
     "slug": "roles.create",
-    "description": "Puede crear los roles del sistema"
+    "description": "Puede crear los roles del sistema",
+    "is_system": 1
   },
   {
     "name": "Ver detalle de roles",
     "slug": "roles.show",
-    "description": "Ver el detalle de los roles del sistema"
+    "description": "Ver el detalle de los roles del sistema",
+    "is_system": 1
   },
   {
     "name": "Edición de roles",
     "slug": "roles.edit",
-    "description": "Editar los roles del sistema"
+    "description": "Editar los roles del sistema",
+    "is_system": 1
   },
   {
     "name": "Eliminar roles",
     "slug": "roles.destroy",
-    "description": "Eliminar los roles del sistema"
+    "description": "Eliminar los roles del sistema",
+    "is_system": 1
   },
   {
     "name": "Navegar permisos",
     "slug": "permissions.index",
-    "description": "Lista los permisos del sistema"
+    "description": "Lista los permisos del sistema",
+    "is_system": 1
   },
   {
     "name": "Crear permisos",
     "slug": "permissions.create",
-    "description": "Puede crear los permisos del sistema"
+    "description": "Puede crear los permisos del sistema",
+    "is_system": 1
   },
   {
     "name": "Ver detalle de permisos",
     "slug": "permissions.show",
-    "description": "Ver el detalle de los permisos del sistema"
+    "description": "Ver el detalle de los permisos del sistema",
+    "is_system": 1
   },
   {
     "name": "Edición de permisos",
     "slug": "permissions.edit",
-    "description": "Editar los permisos del sistema"
+    "description": "Editar los permisos del sistema",
+    "is_system": 1
   },
   {
     "name": "Eliminar permisos",
     "slug": "permissions.destroy",
-    "description": "Eliminar los permisos del sistema"
+    "description": "Eliminar los permisos del sistema",
+    "is_system": 1
   },
   {
     "name": "Navegar Clientes",
     "slug": "clients.index",
-    "description": "Lista los Clientes"
+    "description": "Lista los Clientes",
+    "is_system": 0
   },
   {
     "name": "Crear Clientes",
     "slug": "clients.create",
-    "description": "Puede crear los clientes"
+    "description": "Puede crear los clientes",
+    "is_system": 0
   },
   {
     "name": "Ver detalle de Clientes",
     "slug": "clients.show",
-    "description": "Ver el detalle de los clientes"
+    "description": "Ver el detalle de los clientes",
+    "is_system": 0
   },
   {
     "name": "Edición de Clientes",
     "slug": "clients.edit",
-    "description": "Editar los Clientes"
+    "description": "Editar los Clientes",
+    "is_system": 0
   },
   {
     "name": "Eliminar Clientes",
     "slug": "clients.destroy",
-    "description": "Eliminar los Clientes"
+    "description": "Eliminar los Clientes",
+    "is_system": 0
   },
   {
     "name": "Navegar Propiedades",
     "slug": "properties.index",
-    "description": "Lista los Propiedades"
+    "description": "Lista los Propiedades",
+    "is_system": 0
   },
   {
     "name": "Crear Propiedades",
     "slug": "properties.create",
-    "description": "Puede crear los Propiedades"
+    "description": "Puede crear los Propiedades",
+    "is_system": 0
   },
   {
     "name": "Ver detalle de Propiedades",
     "slug": "properties.show",
-    "description": "Ver el detalle de los Propiedades"
+    "description": "Ver el detalle de los Propiedades",
+    "is_system": 0
   },
   {
     "name": "Edición de Propiedades",
     "slug": "properties.edit",
-    "description": "Editar los Propiedades"
+    "description": "Editar los Propiedades",
+    "is_system": 0
   },
   {
     "name": "Eliminar Propiedades",
     "slug": "properties.destroy",
-    "description": "Eliminar los Propiedades"
+    "description": "Eliminar los Propiedades",
+    "is_system": 0
+  },
+  {
+    "name": "Navegar Paises",
+    "slug": "countries.index",
+    "description": "Lista los Paises",
+    "is_system": 1
+  },
+  {
+    "name": "Crear Paises",
+    "slug": "countries.create",
+    "description": "Puede crear los Paises",
+    "is_system": 1
+  },
+  {
+    "name": "Ver detalle de Paises",
+    "slug": "countries.show",
+    "description": "Ver el detalle de los Paises",
+    "is_system": 1
+  },
+  {
+    "name": "Edición de Paises",
+    "slug": "countries.edit",
+    "description": "Editar los Paises",
+    "is_system": 1
+  },
+  {
+    "name": "Eliminar Paises",
+    "slug": "countries.destroy",
+    "description": "Eliminar los Paises",
+    "is_system": 1
+  },
+  {
+    "name": "Navegar Departamentos",
+    "slug": "departaments.index",
+    "description": "Lista los Departamentos",
+    "is_system": 1
+  },
+  {
+    "name": "Crear Departamentos",
+    "slug": "departaments.create",
+    "description": "Puede crear los Departamentos",
+    "is_system": 1
+  },
+  {
+    "name": "Ver detalle de Departamentos",
+    "slug": "departaments.show",
+    "description": "Ver el detalle de los Departamentos",
+    "is_system": 1
+  },
+  {
+    "name": "Edición de Departamentos",
+    "slug": "departaments.edit",
+    "description": "Editar los Departamentos",
+    "is_system": 1
+  },
+  {
+    "name": "Eliminar Departamentos",
+    "slug": "departaments.destroy",
+    "description": "Eliminar los Departamentos",
+    "is_system": 1
+  },
+  {
+    "name": "Navegar Municipios",
+    "slug": "municipalities.index",
+    "description": "Lista los Municipios",
+    "is_system": 1
+  },
+  {
+    "name": "Crear Municipios",
+    "slug": "municipalities.create",
+    "description": "Puede crear los Municipios",
+    "is_system": 1
+  },
+  {
+    "name": "Ver detalle de Municipios",
+    "slug": "municipalities.show",
+    "description": "Ver el detalle de los Municipios",
+    "is_system": 1
+  },
+  {
+    "name": "Edición de Municipios",
+    "slug": "municipalities.edit",
+    "description": "Editar los Municipios",
+    "is_system": 1
+  },
+  {
+    "name": "Eliminar Municipios",
+    "slug": "municipalities.destroy",
+    "description": "Eliminar los Municipios",
+    "is_system": 1
+  },
+  {
+    "name": "Navegar Barrios",
+    "slug": "neighborhoods.index",
+    "description": "Lista los Barrios",
+    "is_system": 1
+  },
+  {
+    "name": "Crear Barrios",
+    "slug": "neighborhoods.create",
+    "description": "Puede crear los Barrios",
+    "is_system": 1
+  },
+  {
+    "name": "Ver detalle de Barrios",
+    "slug": "neighborhoods.show",
+    "description": "Ver el detalle de los Barrios",
+    "is_system": 1
+  },
+  {
+    "name": "Edición de Barrios",
+    "slug": "neighborhoods.edit",
+    "description": "Editar los Barrios",
+    "is_system": 1
+  },
+  {
+    "name": "Eliminar Barrios",
+    "slug": "neighborhoods.destroy",
+    "description": "Eliminar los Barrios",
+    "is_system": 1
+  },
+  {
+    "name": "Navegar Localidades",
+    "slug": "localities.index",
+    "description": "Lista los Localidades",
+    "is_system": 1
+  },
+  {
+    "name": "Crear Localidades",
+    "slug": "localities.create",
+    "description": "Puede crear los Localidades",
+    "is_system": 1
+  },
+  {
+    "name": "Ver detalle de Localidades",
+    "slug": "localities.show",
+    "description": "Ver el detalle de los Localidades",
+    "is_system": 1
+  },
+  {
+    "name": "Edición de Localidades",
+    "slug": "localities.edit",
+    "description": "Editar los Localidades",
+    "is_system": 1
+  },
+  {
+    "name": "Eliminar Localidades",
+    "slug": "localities.destroy",
+    "description": "Eliminar los Localidades",
+    "is_system": 1
   }
 ]

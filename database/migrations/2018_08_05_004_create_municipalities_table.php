@@ -17,10 +17,11 @@ class CreateMunicipalitiesTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('description');
+            $table->string('short_name')->nullable();
             $table->unsignedInteger('departament_id')->unsigned();
             $table->foreign('departament_id')->references('id')->on('departaments')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

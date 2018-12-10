@@ -13,34 +13,6 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'ISMAEL E. LASTRE ALVAREZ',
-            'email' => 'ismaelfac@gmail.com',
-            'password' => bcrypt('BrwQ12-123'),
-            'entry' => 'portal',
-            'is_active' => 1
-        ]);
-        User::create([
-            'name' => 'ELIANA ROBLES',
-            'email' => 'directora@inversionesyproyectos.com',
-            'password' => bcrypt('Inversiones'),
-            'entry' => 'portal',
-            'is_active' => 1
-        ]);
-        User::create([
-            'name' => 'VALERIA VASQUEZ CUESTA',
-            'email' => 'vvasquez02@gmail.com',
-            'password' => bcrypt('BrwQ12-123'),
-            'entry' => 'portal',
-            'is_active' => 1
-        ]);
-        User::create([
-            'name' => 'LILIANA MARTINEZ APARICIO',
-            'email' => 'lmartinez@gmail.com',
-            'password' => bcrypt('BrwQ12-123'),
-            'entry' => 'portal',
-            'is_active' => 0
-        ]);
         Role::create([
             'name' => 'Administrador',
             'slug' => 'administrador',
@@ -66,9 +38,37 @@ class UserTableSeeder extends Seeder
             'special' => null
         ]);
 
-
-
-
-
+        $user1 = User::create([
+            'name' => 'ISMAEL E. LASTRE ALVAREZ',
+            'email' => 'ismaelfac@gmail.com',
+            'password' => bcrypt('BrwQ12-123'),
+            'entry' => 'portal',
+            'is_active' => 1
+        ]);
+        $user1->roles()->sync(['1']); //update roles
+        $user2 = User::create([
+            'name' => 'ELIANA ROBLES',
+            'email' => 'directora@inversionesyproyectos.com',
+            'password' => bcrypt('Inversiones'),
+            'entry' => 'portal',
+            'is_active' => 1
+        ]);
+        $user2->roles()->sync(['1']); //update roles
+        $user3 = User::create([
+            'name' => 'VALERIA VASQUEZ CUESTA',
+            'email' => 'vvasquez02@gmail.com',
+            'password' => bcrypt('BrwQ12-123'),
+            'entry' => 'portal',
+            'is_active' => 1
+        ]);
+        $user3->roles()->sync(['3', '4']); //update roles
+        $user4 = User::create([
+            'name' => 'LILIANA MARTINEZ APARICIO',
+            'email' => 'lmartinez@gmail.com',
+            'password' => bcrypt('BrwQ12-123'),
+            'entry' => 'portal',
+            'is_active' => 0
+        ]);
+        $user4->roles()->sync(['4']); //update roles
     }
 }

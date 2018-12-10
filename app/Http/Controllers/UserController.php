@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Collection;
 use App\User;
 use Caffeinated\Shinobi\Models\Role;
 
@@ -42,9 +43,16 @@ class UserController extends Controller
      */
     public function store(Request $request, User $user)
     {
-        $user = User::create($request::all());
-        $user->roles()->sync($request->get('roles')); //update roles
-        return redirect()->route('users.edit', $user->id)->with('info', 'Usuario Guardado con Exito');
+        dd($request->all());
+        $user = User::create([
+            'name' => ($request->last_name . ' ' . $request->first_name),
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+            'entry' => 'portal',
+            'is_active' => $request->is_active
+        ]);
+        $user->roles()->sync($request->get('roles_personalized')); //update roles
+        return redirect()->route('users.index')->with('info', 'Usuario Guardado con Exito');
     }
 
     /**
@@ -55,15 +63,14 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $roles_unique = ($user->isAdministrador() ? $this->getRoles_inv() : Role::find($user));
+        $roles_unique = ($user->isAdministrador() ? $this->getRoles_inv($user) : Role::find($user)->where('special', null));
         //dd($roles_unique);
-        return view('admin2.modules.users.show', compact('user', 'roles_unique', 'roles_personalized'));
+        return view('admin2.modules.users.show', compact('user', 'roles_unique'));
     }
-    public function getRoles_inv()
+    public function getRoles_inv($user)
     {
-        return Role::where('special', 'all-access')->orWhere('special', 'no-access')->get();
+        return Role::find($user)->where('special', 'all-access')->Where('special', 'no-access');
     }
-
 
     /**
      * Show the form for editing the specified resource.

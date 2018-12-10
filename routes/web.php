@@ -23,12 +23,15 @@ Route::get('results_inmobiliarias', 'HomeController@propertiesDetails')->name('p
 Route::get('property_income', 'HomeController@propertyIncome')->name('property_income');
 Route::get('blog', 'HomeController@blog')->name('blog');
 Route::get('contactenos', 'HomeController@contact')->name('contact');
-Route::POST('property_create', 'PropertiesController@create_Wasi');
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('users', 'UserController')->middleware('has.permission:users.index');
     Route::resource('roles', 'RoleController')->middleware('has.permission:roles.index');
     Route::resource('permissions', 'PermissionController')->middleware('has.permission:permissions.index');
     Route::resource('clients', 'ClientController')->middleware('has.permission:clients.index');
-    Route::get('panel', 'Admin\PortalController@index')->middleware('has.permission:panel');
+    Route::resource('properties', 'PropertyController')->middleware('has.permission:properties.index');
+    Route::resource('countries', 'Parameters\CountryController')->middleware('has.permission:countries.index');
+    Route::get('panel', function () {
+        return view('admin2.content');
+    })->middleware('has.permission:parameters');
 });

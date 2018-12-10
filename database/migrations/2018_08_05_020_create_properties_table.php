@@ -92,8 +92,7 @@ class CreatePropertiesTable extends Migration
                   $table->foreign('publish_on_map_id')->references('id')->on('publication_google_maps')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
-                  $table->string('main_image')->nullable();
-                  $table->string('galleries');//id de galerías de imágenes asociadas a la propiedad.
+                  $table->integer('galleries_id')->unsigned()->default(0);//id de galerías de imágenes asociadas a la propiedad.
                   $table->string('features')->nullable();//Características internas y externas asociadas a la propiedad.  
                   $table->timestamps();
             });

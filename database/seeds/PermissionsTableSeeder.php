@@ -14,8 +14,9 @@ class PermissionsTableSeeder extends Seeder
             Permission::create([
                 'name' => $value['name'],
                 'slug' => $value['slug'],
-                'description' => $value['description']
-            ]);   
+                'description' => $value['description'],
+                'is_system' => $value['is_system']
+            ]);
         }
     }
 }
