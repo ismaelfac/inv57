@@ -77,8 +77,9 @@
                 <div class="card-header">{{ session('info') }}</div>
               </div>
             @endif
-            @yield('content')
-
+            <div id="app">
+              @yield('content')
+            </div>
           </div>
           <!-- /.container-fluid -->
 

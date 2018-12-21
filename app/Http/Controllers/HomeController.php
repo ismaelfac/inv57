@@ -26,20 +26,36 @@ class HomeController extends Controller
         return view('website.content');
     }
 
-    public function propertiesDetails(){
+
+    public function blog()
+    {
         return view('website.blog');
     }
+    public function properties()
+    {
+        return view('website.properties');
+    }
 
-    public function about(){
-        
+    public function brand()
+    {
+
+        return view('website.brand');
+    }
+
+
+    public function about()
+    {
+
         return view('website.about_us');
     }
 
-    public function contact(){
+    public function contact()
+    {
         return view('website.contact');
     }
 
-    public function marca(){
+    public function marca()
+    {
         return view('website.marca');
     }
 }

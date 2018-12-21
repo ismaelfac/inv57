@@ -15,8 +15,9 @@ class CreateFeaturesTable extends Migration
     {
         Schema::create('features', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_wasi');
             $table->string('name');
-            $table->string('int_ext');
+            $table->boolean('int_ext')->default(false);
         });
     }
 

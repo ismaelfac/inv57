@@ -16,11 +16,12 @@ class UserController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $id = Auth::id();
-        $users = User::where('id', '<>', 1)->where('id', '<>', $id)->orderBy('updated_at', 'DESC')->paginate(3);
-        $title = "Listado de Usuarios";
+        //dd($request->get('name'));
+        $users = User::name($request->get('name'))->with('roles')->whereNotIn('id', ['1', $id])->orderBy('updated_at', 'DESC')->paginate(5);
+        //dd($users);
         return view('admin2.modules.users.index', compact('users', 'title'));
     }
     /**
@@ -43,7 +44,6 @@ class UserController extends Controller
      */
     public function store(Request $request, User $user)
     {
-        dd($request->all());
         $user = User::create([
             'name' => ($request->last_name . ' ' . $request->first_name),
             'email' => $request->email,

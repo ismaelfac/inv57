@@ -6291,12 +6291,12 @@ button.close {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 980px !important;
     margin: 1.75rem auto;
   }
 
   .modal-dialog-centered {
-    min-height: calc(100% - (1.75rem * 2));
+    min-height: calc(100% - (1.75rem * 4));
   }
 
   .modal-dialog-centered::before {
@@ -6308,9 +6308,9 @@ button.close {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .modal-lg {
-    max-width: 800px;
+    max-width: 980px !important;
   }
 }
 
@@ -10420,11 +10420,11 @@ a.text-dark:focus {
 }
 
   body {
-    min-width: 992px !important;
+    min-width: 576px !important;
   }
 
   .container {
-    min-width: 992px !important;
+    min-width: 576px !important;
   }
 
   .navbar {

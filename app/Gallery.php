@@ -10,11 +10,10 @@ use App \{
 class Gallery extends Model
 {
     protected $fillable = [
-        'property_id', 'url', 'description', 'position'
+        'id', 'id_image', 'url', 'description', 'position'
     ];
-
     public function Property()
     {
-        return $this->belongsTo(Property::class);
+        return $this->belongsTo(Property::class, 'gallery_id');
     }
 }

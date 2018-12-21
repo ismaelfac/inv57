@@ -3,18 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\PropertiesRequest;
 use App\Property;
+use App\PropertyType;
 
 class PropertyController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
-    }
 
-    public function index()
+    }
+    public function getProperties()
     {
-        return view('admin2.modules.properties.index');
+        $properties = Property::getPropertiesAttribute();
+        return response()->json($properties);
+    }
+    public function searchProperties($property_id)
+    {
+
+    }
+    public function index(Request $request)
+    {
+        $properties = Property::getPropertiesAttribute();
+        //dd($properties);
+        return view('admin2.modules.properties.index', compact('properties'));
     }
     /**
      * Show the form for creating a new resource.
@@ -23,8 +35,8 @@ class PropertyController extends Controller
      */
     public function create()
     {
-        $properties = Property::getpropertiesAttribute();
-        return view('admin2.modules.properties.create');
+        $propertiesType = PropertyType::all();
+        return view('admin2.modules.properties.create', compact('propertiesType'));
     }
 
     /**

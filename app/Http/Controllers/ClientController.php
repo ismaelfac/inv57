@@ -12,7 +12,12 @@ class ClientController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+
+    }
+    public function getClients()
+    {
+        $clients = Client::getClientsAttribute('web');
+        return response()->json($clients);
     }
 
     public function index()

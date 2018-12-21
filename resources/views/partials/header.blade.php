@@ -84,7 +84,7 @@
                                         <li class="mega-parent"><a href="{{ url('sobre-nosotros') }}">Sobre Nosotros</a></li>
                                         <li><a href="{{ url('marca')}}">Marca</a></li>
                                         <li><a href="{{ url('blog') }}">Blog</a></li>
-                                        <li><a href="{{ url('Inmobiliaria') }}">Portafolio</a></li>
+                                        <li><a href="{{ url('propiedades') }}">Portafolio</a></li>
                                         <li><a href="{{ url('contactenos')}}">Contacto</a></li>
                                     </ul>
                                 </nav>

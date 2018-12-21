@@ -15,7 +15,6 @@ class DatabaseSeeder extends Seeder
             'role_user',
             'categories',
             'comments',
-            'properties',
             'clients',
             'users',
             'posts',
@@ -28,7 +27,9 @@ class DatabaseSeeder extends Seeder
             'type_properties',
             'rent_types',
             'identifications',
-            'properties'
+            'features',
+            'properties',
+            'features_properties'
         ]);
         $this->call([
             PermissionsTableSeeder::class,
@@ -50,13 +51,14 @@ class DatabaseSeeder extends Seeder
             statePagesTableSeeder::class,
             PublicationGoogleMapsTableSeeder::class,
             CategoryTableSeeder::class,
-            CommentTableSeeder::class,
-            PropertiesTableSeeder::class
+            PropertiesTableSeeder::class,
+            CommentTableSeeder::class
         ]);
     }
-    protected function truncateTables(array $tables){
+    protected function truncateTables(array $tables)
+    {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0;'); // Desactivamos la revisión de claves foráneas
-        foreach($tables as $table){
+        foreach ($tables as $table) {
             DB::table($table)->truncate();
         }
         DB::statement('SET FOREIGN_KEY_CHECKS = 1;'); // Reactivamos la revisión de claves foráneas

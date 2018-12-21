@@ -3,123 +3,75 @@
 @section('content')
 <div class="card">
     <div class="card border-secondary mb-3">
-    <div class="card-header">Inmuebles
-        <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-            @can('properties.create')
-            <a href="{{ route('properties.create') }}" class="btn btn-outline-success">Registrar Inmuebles</a>
-            @endcan
-        </div>
-    </div>
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                <span class="input-group-btn">
+                    @can('properties.create')
+                    <a href="{{ route('properties.create') }}" class="btn btn-outline-success btn-sm" role="button">Registrar Propiedad</a>
+                    @endcan
+                </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                {!! Form::open(['route' => ['properties.index'], 'method' => 'GET', 'class' => '', 'role' => 'search']) !!}
+                <div class="input-group input-group-sm">
+                <input type="text" name="name" class="form-control " placeholder="Buscar...">
+                <span class="input-group-btn">
+                    <button class="btn btn-outline-info btn-sm" type="submit">Buscar!</button>
+                </span>
+                </div><!-- /input-group -->
+                {!! Form::close() !!}
+            </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div>    
     <div class="card-body text-secondary">
+    {{ $properties->render() }}
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
                     <th width="10px">Codigo</th>
-                    <th>Zona </th>
+                    <th>Titulo</th>
+                    <th>Tipo</th>
+                    <th>Pais</th>
+                    <th>Depar</th>
                     <th>Ciudad</th>
                     <th>Barrio</th>
-                    <th>Tipo</th>
-                    <th>Cannon</th>
-                    <th>Admon</th>
-                    <th>Venta</th>
-                    <th>Direccion</th>
+                    <th>Dirección</th>
+                    <th>Area</th>
                     <th>&nbsp;</th>
                 </tr>
             </thead>
              <tbody>
+                @foreach($properties as $property)
                 <tr>
-                    <td>1212</td>
-                    <td>SUR</td>
-                    <td>BAQ</td>
-                    <td>Kennedy</td>
-                    <td>lote comercial</td>
-                    <td>$723.000</td>
-                    <td>$250.000</td>
-                    <td>$980.000.000</td>
-                    <td>Calle 47D #1a4 - 82</td>
+                    <td>{{ $property->id }}</td>
+                    <td>{{ $property->title }}</td>
+                    <td>{{ $property->PropertyType->name }}</td>
+                    <td>{{ $property->country->short_name }}</td>
+                    <td>{{ $property->departament->short_name }}</td>
+                    <td>{{ $property->municipality->description }}</td>
+                    <td>{{ $property->neighborhood->description }}</td>
+                    <td>{{ $property->address }}</td>
+                    <td>{{ $property->area }}</td>
                     <td>
                         <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
+                            @can('properties.show')
+                                <a href="{{ route('properties.show', $property->id) }}" class="btn btn-outline-info">Ver</a>
+                            @endcan
+                            @can('properties.edit')
+                                <a href="{{ route('properties.edit', $property->id) }}" class="btn btn-outline-warning">Editar</a>
+                            @endcan
                         </div>    
                     </td>                
                 </tr>
-                <tr>
-                    <td>1212</td>
-                    <td>SUR</td>
-                    <td>BAQ</td>
-                    <td>Kennedy</td>
-                    <td>lote comercial</td>
-                    <td>$723.000</td>
-                    <td>$250.000</td>
-                    <td>$980.000.000</td>
-                    <td>Calle 47D #1a4 - 82</td>
-                    <td>
-                        <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                        </div>    
-                    </td>                
-                </tr>
-                <tr>
-                    <td>1212</td>
-                    <td>SUR</td>
-                    <td>BAQ</td>
-                    <td>Kennedy</td>
-                    <td>lote comercial</td>
-                    <td>$723.000</td>
-                    <td>$250.000</td>
-                    <td>$980.000.000</td>
-                    <td>Calle 47D #1a4 - 82</td>
-                    <td>
-                        <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                        </div>    
-                    </td>                
-                </tr>
-                <tr>
-                    <td>1212</td>
-                    <td>SUR</td>
-                    <td>BAQ</td>
-                    <td>Kennedy</td>
-                    <td>lote comercial</td>
-                    <td>$723.000</td>
-                    <td>$250.000</td>
-                    <td>$980.000.000</td>
-                    <td>Calle 47D #1a4 - 82</td>
-                    <td>
-                        <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                        </div>    
-                    </td>                
-                </tr>
-                <tr>
-                    <td>1212</td>
-                    <td>SUR</td>
-                    <td>BAQ</td>
-                    <td>Kennedy</td>
-                    <td>lote comercial</td>
-                    <td>$723.000</td>
-                    <td>$250.000</td>
-                    <td>$980.000.000</td>
-                    <td>Calle 47D #1a4 - 82</td>
-                    <td>
-                        <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                            <a href="#" class="btn btn-outline-success btn-xs">ver</a>
-                        </div>    
-                    </td>                
-                </tr>
+                @endforeach
             </tbody>
         </table>
+        
     </div>
     </div>
 </div>
+
 @endsection

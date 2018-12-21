@@ -81,6 +81,12 @@ class PropertiesWasiController extends Controller
 				//dd($property);
 		}
 	}
+	public static function getFeatureWasiAttribute()
+	{
+		$client = new ClientHttp('');
+		$data = $client->get('feature/all');
+		return $data;
+	}
 	public static function setGalleries(array $galleries_inv)
 	{
 		try {

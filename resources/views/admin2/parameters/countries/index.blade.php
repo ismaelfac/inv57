@@ -32,9 +32,6 @@
                     <td>{{ $country->short_name }}</td>
                     <td>
                         <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            @can('countries.show')
-                                <a href="{{ route('countries.show', $country->id) }}" class="btn btn-outline-info">Ver</a>
-                            @endcan
                             @can('countries.edit')
                                 <a href="{{ route('countries.edit', $country->id) }}" class="btn btn-outline-warning">Editar</a>
                             @endcan

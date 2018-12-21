@@ -1,22 +1,26 @@
 <?php
 namespace App;
 
+use Caffeinated\Shinobi\Models\Role;
 use App\Modelsgenerals \{
     Country, Departament, Location, Municipality, Neighborhood
 };
 use App \{
-    User, Post, RentType, Feature, Gallery
+    User, Post, RentType, Feature, Gallery, PropertyType
 };
+use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Collection;
+use Caffeinated\Shinobi\Models\Permission;
 
 class Property extends Model
 {
     protected $table = 'properties';
     protected $fillable = [
         'id', 'id_user_wasi', 'client_id', 'for_sale', 'for_rent', 'for_transfer', 'property_type_id', 'country_id', 'departament_id', 'municipality_id', 'location_id', 'neighborhood_id', 'iso_currency', 'title', 'address', 'area', 'unit_area_label', 'built_area', 'id_unit_built_area', 'unit_built_area_label', 'maintenance_fee', 'sale_price', 'rent_price', 'bedrooms', 'bathrooms', 'garages', 'floor', 'stratum', 'social_stratum_id', 'observations',
-        'video', 'property_condition_id', 'property_condition_label', 'status_on_page_id', 'latitude', 'longitude', 'building_date', 'create_wasi', 'update_wasi', 'visits', 'reference', 'comment', 'rents_type_id', 'zip_code', 'availability_id', 'publish_on_map_id', 'main_image',
-        'galleries', 'features', 'user_id', 'state_page_id'
+        'video', 'property_condition_id', 'property_condition_label', 'status_on_page_id', 'latitude', 'longitude', 'building_date', 'create_wasi', 'update_wasi', 'visits', 'reference', 'comment', 'rents_type_id', 'zip_code', 'availability_id', 'publish_on_map_id',
+        'gallery_id', 'features', 'user_id', 'state_page_id'
     ];
     protected $casts = [
         'for_sale' => 'boolean',
@@ -28,17 +32,21 @@ class Property extends Model
     {
         return $this->belongsTo(Country::class);
     }
-    public function departaments()
+    public function departament()
     {
-        return $this->hasMany(Departament::class);
+        return $this->belongsTo(Departament::class);
     }
-    public function locations()
+    public function municipality()
     {
-        return $this->hasMany(Location::class);
+        return $this->belongsTo(Municipality::class);
     }
-    public function neighborhoods()
+    public function location()
     {
-        return $this->hasMany(Neighborhood::class);
+        return $this->belongsTo(Location::class);
+    }
+    public function neighborhood()
+    {
+        return $this->belongsTo(Neighborhood::class);
     }
     public function user()
     {
@@ -56,13 +64,17 @@ class Property extends Model
     {
         return $this->belongsTo(RentType::class);
     }
-    public function Feature()
+    public function features()
     {
         return $this->hasMany(Feature::class);
     }
     public function Galleries()
     {
-        return $this->hasMany(Gallery::class);
+        return $this->hasMany(Gallery::class, 'id');
+    }
+    public function PropertyType()
+    {
+        return $this->belongsTo(PropertyType::class);
     }
     public static function loadImage($url, $name_image)
     {
@@ -71,6 +83,79 @@ class Property extends Model
         $size = Storage::size($url);
         dd($url_result);
         return $url_result;
+    }
+    public static function getPropertiesAttribute()
+    {
+        $role = Role::find(4);
+        try {
+            $properties = Property::query()->with('PropertyType', 'country', 'departament', 'municipality', 'location', 'neighborhood')->paginate(5);
+            $buttons = $role->getPermissions();
+            $headers = [
+                array(
+                    'key' => 'id',
+                    'label' => 'Codigo',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ), array(
+                    'key' => 'location',
+                    'label' => 'Zona',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ), array(
+                    'key' => 'country',
+                    'label' => 'Pais',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'departament',
+                    'label' => 'Depar',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'neighborhood',
+                    'label' => 'Barrio',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'rent_price',
+                    'label' => 'Cannon',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'sale_price',
+                    'label' => 'Venta',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'title',
+                    'label' => 'Titulo',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'address',
+                    'label' => 'Dirección',
+                    'sortable' => true,
+                    'sortDirection' => 'desc'
+                ),
+                array(
+                    'key' => 'actions',
+                    'label' => 'Acciones'
+                )
+            ];
+            return $properties;
+        } catch (Exception $e) {
+
+        }
+    }
+    public static function setPropertiesWasi($property_id)
+    {
+
     }
     public static function getMainImageAttribue($main_page, $galleries)
     {

@@ -52,12 +52,12 @@
                         <div class="input-group-prepend">
                         <div class="input-group-text">Estado del Usuario</div>
                             <div class="form-check form-check-inline">
-                                {{ Form::radio('is_active', '1')}}<label class="form-check-label" for="exampleRadios1">
+                                {!! Form::radio('is_active', '1', true) !!}<label class="form-check-label" for="exampleRadios1">
                                 Activar
                             </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                {{ Form::radio('is_active', '0')}}<label class="form-check-label" for="exampleRadios1">
+                                {!! Form::radio('is_active', '0') !!}<label class="form-check-label" for="exampleRadios1">
                                 Desactivar
                             </label>
                             </div>

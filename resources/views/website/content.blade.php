@@ -66,8 +66,8 @@
                     <div class="featured-flat">
                         <div class="row">
                         <!-- flat-item --> 
-                        priedades
-                            <!-- flat-item -->
+                            <propertieshome-component></propertieshome-component>
+                        <!-- flat-item -->
                         </div>
                     </div>
                 </div>

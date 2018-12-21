@@ -18,10 +18,10 @@ class CreateLocationsTable extends Migration
             $table->increments('id');
             $table->string('description');
             $table->string('short_name');
-            $table->unsignedInteger('municipality_id')->unsigned();
+            $table->unsignedInteger('municipality_id')->unsigned()->nullable();
             $table->foreign('municipality_id')->references('id')->on('municipalities')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

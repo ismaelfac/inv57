@@ -2320,6 +2320,11 @@
     "id_departament": 11
   },
   {
+    "description": "Bogotá D.C.",
+    "short_name": "BOG",
+    "id_departament": 11
+  },
+  {
     "description": "CABRERA",
     "short_name": "",
     "id_departament": 11

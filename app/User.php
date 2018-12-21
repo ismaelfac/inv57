@@ -7,6 +7,8 @@ use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -95,6 +97,18 @@ class User extends Authenticatable implements MustVerifyEmail
     public function owns(Model $model)
     {
         return $this->id === $model->user_id;
+    }
+    public function scopeName($query, $name)
+    {
+        if (trim($name) != "") {
+            $query->where('name', 'LIKE', '%' . $name . '%');
+        }
+    }
+    public function scopeEmail($query, $email)
+    {
+        if (trim($email) != "") {
+            $query->where('email', 'LIKE', '%' . $email . '%');
+        }
     }
 
 }

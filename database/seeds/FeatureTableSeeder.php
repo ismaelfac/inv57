@@ -2,16 +2,27 @@
 
 use Illuminate\Database\Seeder;
 use App\Feature;
+use App\Http\Controllers \{
+    PropertiesWasiController
+};
+
 class FeatureTableSeeder extends Seeder
 {
     public function run()
     {
-        $data = file_get_contents("database/Queries/features.json");
-        $features = json_decode($data, true);
-        foreach ($features as $value) {
+        $features = PropertiesWasiController::getFeatureWasiAttribute();
+        foreach ($features['internal'] as $value) {
             Feature::create([
-                'name' => $value['name'],
-                'int_ext' => $value['int_ext']
+                'id_wasi' => $value['id'],
+                'name' => $value['nombre'],
+                'int_ext' => 1
+            ]);
+        }
+        foreach ($features['external'] as $value) {
+            Feature::create([
+                'id_wasi' => $value['id'],
+                'name' => $value['nombre'],
+                'int_ext' => 0
             ]);
         }
     }

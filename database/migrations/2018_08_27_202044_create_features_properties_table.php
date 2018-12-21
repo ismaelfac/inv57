@@ -15,14 +15,14 @@ class CreateFeaturesPropertiesTable extends Migration
     {
         Schema::create('features_properties', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('property_id')->unsigned();
+            $table->integer('property_id')->unsigned()->index();
             $table->foreign('property_id')->references('id')->on('properties')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');     
-            $table->integer('feature_id')->unsigned();
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+            $table->integer('feature_id')->unsigned()->index();
             $table->foreign('feature_id')->references('id')->on('features')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');     
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->timestamps();
         });
     }

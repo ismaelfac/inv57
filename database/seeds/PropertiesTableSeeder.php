@@ -6,7 +6,7 @@ use App\Modelsgenerals \{
     Civilstatus, Country, Departament, Identification, Location, Municipality, Neighborhood
 };
 use App \{
-    Property, PropertiesType, Gallery
+    Property, PropertiesType, Gallery, Feature
 };
 use Illuminate\Database\Seeder;
 
@@ -15,19 +15,7 @@ class PropertiesTableSeeder extends Seeder
     public function run()
     {
         $propertiesTercero = PropertiesWasiController::getLatestProperties(30)['properties'];
-        //dd($propertiesTercero[0]);
-        //$propertiesTercero = json_encode($propertiesTercero);
         foreach ($propertiesTercero as $property_tercero) {
-            $length = sizeof($property_tercero['galleries'][0]);
-            for ($i = 0; $i < $length; $i++) {
-                $galleries = Gallery::create([
-                    'id_gallery' => $property_tercero['galleries'][0]['id'],
-                    'id_image' => $property_tercero['galleries'][0][$i]['id'],
-                    'url' => $property_tercero['galleries'][0][$i]['url'],
-                    'description' => $property_tercero['galleries'][0][$i]['description'],
-                    'position' => $property_tercero['galleries'][0][$i]['position']
-                ]);
-            }
             $properties = Property::create([
                 'id' => $property_tercero['id_property'],
                 'id_user_wasi' => $property_tercero['id_user'],
@@ -56,7 +44,7 @@ class PropertiesTableSeeder extends Seeder
                 'bathrooms' => $property_tercero['bathrooms'],
                 'garages' => $property_tercero['garages'],
                 'floor' => $property_tercero['floor'],
-                'social_stratum_id' => $property_tercero['stratum'],
+                'social_stratum_id' => ($property_tercero['stratum'] ? : 9),
                 'observations' => $property_tercero['observations'],
                 'video' => $property_tercero['video'],
                 'property_condition_id' => $property_tercero['id_property_condition'],
@@ -66,16 +54,33 @@ class PropertiesTableSeeder extends Seeder
                 'building_date' => $property_tercero['building_date'],
                 'visits' => $property_tercero['visits'],
                 'create_wasi' => $property_tercero['created_at'],
-                'update_wasi' => $property_tercero['updated_at'],
+                'update_wasi' => (($property_tercero['updated_at'] === "0000-00-00 00:00:00" || $property_tercero['updated_at'] === null) ? null : $property_tercero['updated_at']),
                 'reference' => $property_tercero['reference'],
                 'comment' => $property_tercero['comment'],
                 'rents_type_id' => $property_tercero['id_rents_type'],
                 'zip_code' => $property_tercero['zip_code'],
                 'availability_id' => $property_tercero['id_availability'],
-                'publish_on_map_id' => $property_tercero['id_publish_on_map'],
-                'galleries_id' => $property_tercero[0]['id']
+                'publish_on_map_id' => $property_tercero['id_publish_on_map']
             ]);
-
+            $length = sizeof($property_tercero['galleries'][0]);
+            for ($i = 0; $i < $length - 1; $i++) {
+                error_reporting(0);
+                $gallery_id = $property_tercero['galleries'][0]['id'];
+                $galleries = Gallery::create([
+                    'gallery_wasi_id' => $property_tercero['galleries'][0]['id'],
+                    'id_image' => $property_tercero['galleries'][0][$i]['id'],
+                    'url' => $property_tercero['galleries'][0][$i]['url'],
+                    'description' => $property_tercero['galleries'][0][$i]['description'],
+                    'position' => $property_tercero['galleries'][0][$i]['position'],
+                    'property_id' => $property_tercero['id_property']
+                ]);
+            }
+            $length = sizeof($property_tercero['features']);
+            if ($property_tercero['features']['internal']) {
+                $properties->features()->sync([
+                    ''
+                ]);
+            }
         }
         //dd($properties);
     }
