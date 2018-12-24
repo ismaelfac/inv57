@@ -32,11 +32,11 @@ class Location extends Model
         $data = json_decode($result_id);
         return $data[0]->id;
     }
-    public static function getLocationforWasiAttribute(String $municipalityWasi)
+    public static function getLocationforAttribute(String $municipalityWasi)
     {
-        $municipality = Municipality::getMunicipalityWasiAttribute($municipalityWasi);
+        $municipality = Municipality::getMunicipalityAttribute($municipalityWasi);
         $location = Location::getFindLocationByMunicipalityAttribute($municipality);
-        return ($location ? : 0);
+        return ($location ? : 1);
     }
 
     public function getUrlAttribute()

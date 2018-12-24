@@ -1,11 +1,12 @@
 <?php
-use App\Modelsgenerals \{
-    Departament, Municipality, Location
-};
 
 namespace App\Modelsgenerals;
 
+use App\Modelsgenerals \{
+    Departament, Municipality, Location
+};
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 
 class Municipality extends Model
 {
@@ -25,12 +26,16 @@ class Municipality extends Model
     {
         return route('municipality.show', $this->id);
     }
-    public static function getMunicipalityWasiAttribute(String $municipalityWasi)
+    public static function getMunicipalityAttribute(string $municipality)
     {
-        $municipality = Municipality::select('id')->where('description', strtoupper($municipalityWasi))->get();
-        $data = $municipality->toJson();
-        $data = json_decode($data);
-        return $data[0]->id;
+        try {
+            $municipality = Municipality::select('id')->where('description', strtoupper($municipality))->get();
+            $data = $municipality->toJson();
+            $data = json_decode($data);
+            return $data[0]->id;
+        } catch (Exception $e) {
+            Log::warning('Error al recibir el Municipio de wasi');
+        }
     }
 
 }

@@ -15,6 +15,7 @@ class PermissionsTableSeeder extends Seeder
                 'name' => $value['name'],
                 'slug' => $value['slug'],
                 'description' => $value['description'],
+                'variant' => $value['variant'],
                 'is_system' => $value['is_system']
             ]);
         }

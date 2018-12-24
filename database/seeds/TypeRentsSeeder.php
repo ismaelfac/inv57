@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Database\Seeder;
-Use App\RentType;
+use App\ModelsProperties\RentType;
+
 class TypeRentsSeeder extends Seeder
 {
-  
+
     public function run()
     {
         $data = file_get_contents("database/Queries/type_rents.json");

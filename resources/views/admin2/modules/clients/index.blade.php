@@ -26,18 +26,14 @@
                 @foreach($clients as $client)
                 <tr>
                     <td>{{ $client->id }}</td>
-                    <td>{{ $client->name }}</td>
+                    <td>{{ $client->last_name }} {{ $client->first_name}}</td>
                     <td>{{ $client->email }}</td>
-                    <td>@can('clients.destroy')
-                            {!! Form::open(['route' => ['clients.destroy', $client->id], 'method' => 'DELETE']) !!}
-                                <button class="btn btn-outline-danger">{{ ($client->active)?'Desactivar':'Activar' }}</button>
-                            {!! Form::close() !!}
-                            </a>
-                        @endcan
-                    </td>
                     <td>{{ $client->updated_at }}</td>
                     <td>
                         <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
+                            @can('properties.index')
+                                <a href="{{ route('properties.show', $client->id) }}" class="btn btn-outline-primary">Inmuebles</a>
+                            @endcan
                             @can('clients.show')
                                 <a href="{{ route('clients.show', $client->id) }}" class="btn btn-outline-info">Ver</a>
                             @endcan

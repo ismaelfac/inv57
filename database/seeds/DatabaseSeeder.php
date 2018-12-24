@@ -15,7 +15,9 @@ class DatabaseSeeder extends Seeder
             'role_user',
             'categories',
             'comments',
-            'clients',
+            'customer_roles',
+            'customers',
+            'type_clients',
             'users',
             'posts',
             'identifications',
@@ -29,7 +31,7 @@ class DatabaseSeeder extends Seeder
             'identifications',
             'features',
             'properties',
-            'features_properties'
+            'feature_property'
         ]);
         $this->call([
             PermissionsTableSeeder::class,
@@ -41,7 +43,8 @@ class DatabaseSeeder extends Seeder
             IdentificationTableSeeder::class,
             CivilstatusTableSeeder::class,
             UserTableSeeder::class,
-            ClientsTableSeeder::class,
+            TypeClientTableSeeder::class,
+            CustomersTableSeeder::class,
             TypePropertyTableSeeder::class,
             TypeRentsSeeder::class,
             FeatureTableSeeder::class,
@@ -49,7 +52,6 @@ class DatabaseSeeder extends Seeder
             propertyAvailabilitiesTableSeeder::class,
             propertyConditionsTableSeeder::class,
             statePagesTableSeeder::class,
-            PublicationGoogleMapsTableSeeder::class,
             CategoryTableSeeder::class,
             PropertiesTableSeeder::class,
             CommentTableSeeder::class

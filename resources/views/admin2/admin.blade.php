@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
    @include('template_partials.admin_style')
+   @yield('style')
   </head>
   <body id="page-top">
-    <div id="panel">
       <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
         <a class="navbar-brand mr-1" href="index.html">InverProject</a>
@@ -77,7 +77,7 @@
                 <div class="card-header">{{ session('info') }}</div>
               </div>
             @endif
-            <div id="app">
+            <div id="panel">
               @yield('content')
             </div>
           </div>
@@ -98,7 +98,6 @@
       </div>
       <!-- /#wrapper -->
 
-    </div>
   </body>
 
     <!-- Bootstrap core JavaScript-->

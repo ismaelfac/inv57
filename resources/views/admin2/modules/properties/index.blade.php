@@ -57,12 +57,18 @@
                     <td>{{ $property->area }}</td>
                     <td>
                         <div class="btn-group btn-group-sm float-right" role="group" aria-label="...">
-                            @can('properties.show')
-                                <a href="{{ route('properties.show', $property->id) }}" class="btn btn-outline-info">Ver</a>
-                            @endcan
-                            @can('properties.edit')
-                                <a href="{{ route('properties.edit', $property->id) }}" class="btn btn-outline-warning">Editar</a>
-                            @endcan
+                                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acciones
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    @can('properties.show')
+                                        <a href="{{ route('properties.show', $property->id) }}" class="dropdown-item">Ver</a>
+                                    @endcan
+                                    @can('properties.edit')
+                                        <a href="{{ route('properties.edit', $property->id) }}" class="dropdown-item">Editar</a>
+                                    @endcan
+                                </div>
+                                
                         </div>    
                     </td>                
                 </tr>

@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\ModelsProperties;
 
-use App\Property;
+use App\ModelsProperties\Property;
 use Illuminate\Database\Eloquent\Model;
 
 class Feature extends Model
@@ -12,9 +12,9 @@ class Feature extends Model
     protected $casts = [
         'int_ext' => 'boolean'
     ];
-    public function Property()
+    public function properties()
     {
-        return $this->belongsTo(Property::class);
+        return $this->belongsToMany(Property::class)->using(FeatureProperty::class);
     }
 
 }

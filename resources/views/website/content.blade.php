@@ -80,8 +80,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title-2 text-center">
-                                <h2>FROM BLOG</h2>
-                                <p>Sheltek is the best theme for  elit, sed do eiusmod tempor dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minim veniam, quis nostrud</p>
+                                <h2> BLOG</h2>
+                                <p>Visite nuestro Blog, y enterese de las opiniones de los expertos en materia inmobiliaria</p>
                             </div>
                         </div>
                     </div>
@@ -91,15 +91,15 @@
                             <div class="col-md-12">
                                 <article class="blog-item bg-gray">
                                     <div class="blog-image">
-                                        <a href="single-blog.html"><img src="website/images/blog/1.jpg" alt=""></a>
+                                        <a href="#"><img src="website/images/blog/1.jpg" alt=""></a>
                                     </div>
                                     <div class="blog-info">
                                         <div class="post-title-time">
-                                            <h5><a href="single-blog.html">Maridland de Villa</a></h5>
-                                            <p>July 30, 2016 / 10 am</p>
+                                            <h5><a href="#">Inversiones en Barranquilla</a></h5>
+                                            <p>Diciembre 10, 2018 / 10 am</p>
                                         </div>
-                                        <p>Lorem must explain to you how all this mistaolt denouncing pleasure and praising pain wasnad I will give you a complete pain was praising</p>
-                                        <a class="read-more" href="single-blog.html">Read more</a>
+                                        <p>Inversiones en Barranquilla por mas de 2.4 billones de pesos en Infraestructura </p>
+                                        <a class="read-more" href="#">Leer Mas...</a>
                                     </div>
                                 </article>
                             </div>
@@ -107,15 +107,15 @@
                             <div class="col-md-12">
                                 <article class="blog-item bg-gray">
                                     <div class="blog-image">
-                                        <a href="single-blog.html"><img src="website/images/blog/2.jpg" alt=""></a>
+                                        <a href="#"><img src="website/images/blog/2.jpg" alt=""></a>
                                     </div>
                                     <div class="blog-info">
                                         <div class="post-title-time">
-                                            <h5><a href="single-blog.html">Latest Design House</a></h5>
-                                            <p>July 30, 2016 / 10 am</p>
+                                            <h5><a href="#">Que opinan los Inversionistas</a></h5>
+                                            <p>Diciembre 09, 2018 / 10 am</p>
                                         </div>
-                                        <p>Lorem must explain to you how all this mistaolt denouncing pleasure and praising pain wasnad I will give you a complete pain was praising</p>
-                                        <a class="read-more" href="single-blog.html">Read more</a>
+                                        <p>Inversionistas predicen buen comienzo en el 2019 en materia de inversión extranjera.</p>
+                                        <a class="read-more" href="#">Leer Mas...</a>
                                     </div>
                                 </article>
                             </div>
@@ -123,15 +123,15 @@
                             <div class="col-md-12">
                                 <article class="blog-item bg-gray">
                                     <div class="blog-image">
-                                        <a href="single-blog.html"><img src="website/images/blog/3.jpg" alt=""></a>
+                                        <a href="#"><img src="website/images/blog/3.jpg" alt=""></a>
                                     </div>
                                     <div class="blog-info">
                                         <div class="post-title-time">
-                                            <h5><a href="single-blog.html">Duplex Villa House</a></h5>
-                                            <p>July 30, 2016 / 10 am</p>
+                                            <h5><a href="#">Nuevas reformas para el POT</a></h5>
+                                            <p>Diciembre 09, 2018 / 10 am</p>
                                         </div>
-                                        <p>Lorem must explain to you how all this mistaolt denouncing pleasure and praising pain wasnad I will give you a complete pain was praising</p>
-                                        <a class="read-more" href="single-blog.html">Read more</a>
+                                        <p>Enterese de lo ultimo en reformas para el POT, nuevos decretos a tener en cuenta en Barranquilla</p>
+                                        <a class="read-more" href="#">Leer Mas...</a>
                                     </div>
                                 </article>
                             </div>
@@ -139,15 +139,15 @@
                             <div class="col-md-12">
                                 <article class="blog-item bg-gray">
                                     <div class="blog-image">
-                                        <a href="single-blog.html"><img src="website/images/blog/2.jpg" alt=""></a>
+                                        <a href="#"><img src="website/images/blog/2.jpg" alt=""></a>
                                     </div>
                                     <div class="blog-info">
                                         <div class="post-title-time">
-                                            <h5><a href="single-blog.html">Latest Design House</a></h5>
-                                            <p>July 30, 2016 / 10 am</p>
+                                            <h5><a href="#">Latest Design House</a></h5>
+                                            <p>Diciembre 09, 2018 / 10 am</p>
                                         </div>
                                         <p>Lorem must explain to you how all this mistaolt denouncing pleasure and praising pain wasnad I will give you a complete pain was praising</p>
-                                        <a class="read-more" href="single-blog.html">Read more</a>
+                                        <a class="read-more" href="#">Leer Mas...</a>
                                     </div>
                                 </article>
                             </div>

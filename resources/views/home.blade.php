@@ -14,7 +14,6 @@
                         </div>
                     @endif
                     
-                   <App></App>
                 </div>
             </div>
         </div>

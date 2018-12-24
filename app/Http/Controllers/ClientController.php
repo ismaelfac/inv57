@@ -24,7 +24,7 @@ class ClientController extends Controller
     {
         //$clients = Client::orderBy('updated_at', 'DESC')->paginate(3);
         $clients = Client::getClientsAttribute('web');
-        dd(json_encode($clients));
+        //dd($clients);
         return view('admin2.modules.clients.index', compact('clients'));
     }
     /**
@@ -34,7 +34,6 @@ class ClientController extends Controller
      */
     public function create()
     {
-        $clients = Client::getClientsAttribute();
         return view('admin2.modules.clients.create');
     }
 
@@ -59,9 +58,7 @@ class ClientController extends Controller
      */
     public function show(Client $client)
     {
-        $roles_unique = ($client->isAdministrador() ? $this->getRoles_inv() : Role::find($client));
-        //dd($roles_unique);
-        return view('admin2.modules.clients.show', compact('user', 'roles_unique', 'roles_personalized'));
+        return view('admin2.modules.clients.show', compact('client'));
     }
     public function getRoles_inv()
     {

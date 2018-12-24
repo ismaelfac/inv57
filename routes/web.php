@@ -35,7 +35,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('permissions', 'PermissionController')->middleware('has.permission:permissions.index');
     Route::resource('clients', 'ClientController')->middleware('has.permission:clients.index');
     Route::resource('properties', 'PropertyController')->middleware('has.permission:properties.index');
-
+    Route::resource('galleries', 'GalleryController')->middleware('has.permission:galleries.index');
+    Route::resource('owner', 'OwnerPropertiesController')->middleware('has.permission:owner.index');
     Route::get('panel', function () {
         return view('admin2.content');
     })->middleware('has.permission:parameters');

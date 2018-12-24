@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFeaturesPropertiesTable extends Migration
+class CreateFeaturePropertyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateFeaturesPropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('features_properties', function (Blueprint $table) {
+        Schema::create('feature_property', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('property_id')->unsigned()->index();
             $table->foreign('property_id')->references('id')->on('properties')
-                ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->integer('feature_id')->unsigned()->index();
             $table->foreign('feature_id')->references('id')->on('features')
-                ->onDelete('cascade')
                 ->onUpdate('cascade');
+            $table->boolean('int_ext')->default(false);
             $table->timestamps();
         });
     }
@@ -34,6 +33,6 @@ class CreateFeaturesPropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('features_properties');
+        Schema::dropIfExists('feature_property');
     }
 }

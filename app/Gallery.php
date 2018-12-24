@@ -3,14 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App \{
+use App\ModelsProperties \{
     Property
 };
 
 class Gallery extends Model
 {
     protected $fillable = [
-        'id', 'id_image', 'url', 'description', 'position'
+        'gallery_wasi_id', 'id_image', 'url', 'description', 'position', 'property_id'
     ];
     public function Property()
     {

@@ -6,6 +6,7 @@ use App\Modelsgenerals \{
     Country, Municipality
 };
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 
 class Departament extends Model
 {
@@ -21,15 +22,15 @@ class Departament extends Model
     {
         return $this->hasMany(Municipality::class);
     }
-    public static function getDepartamentWasiAttribute(String $departamentWasi)
+    public static function getDepartamentAttribute(string $departament)
     {
-        $departament = Departament::select('id')->where('description', strtoupper($departamentWasi))->get();
-        $data = $departament->toJson();
-        $data = json_decode($data);
-        return $data[0]->id;
-    }
-    public static function getDepartamentAttribute()
-    {
-        return Departament::query()->with('country')->paginate(5);
+        try {
+            $result = Departament::select('id')->where('description', strtoupper($departament))->get();
+            $data = $result->toJson();
+            $data = json_decode($data);
+            return $data[0]->id;
+        } catch (Exception $e) {
+            Log::warning('Error al recibir el Departamento de wasi');
+        }
     }
 }

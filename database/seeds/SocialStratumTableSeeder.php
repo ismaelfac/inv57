@@ -1,6 +1,6 @@
 <?php
 
-use App\SocialStratum;
+use App\ModelsProperties\SocialStratum;
 use Illuminate\Database\Seeder;
 
 class SocialStratumTableSeeder extends Seeder

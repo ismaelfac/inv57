@@ -1,6 +1,6 @@
 <?php
 
-use App\PropertyAvailability;
+use App\ModelsProperties\PropertyAvailability;
 use Illuminate\Database\Seeder;
 
 class propertyAvailabilitiesTableSeeder extends Seeder

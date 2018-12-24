@@ -15,12 +15,9 @@ class CreatePropertiesTable extends Migration
       public function up()
       {
             Schema::create('properties', function (Blueprint $table) {
-                  $table->integer('id', 20)->unique()->unsigned();//Identificador unico de la propiedad. | no modificable
+                  $table->increments('id');
+                  $table->string('propertywasi_id');//Identificador unico de la propiedad. | no modificable
                   $table->string('id_user_wasi')->nullable();
-                  $table->integer('client_id')->unsigned();//Identificador unico del cliente asociado a la propiedad.
-                  $table->foreign('client_id')->references('id')->on('clients')
-                        ->onDelete('cascade')
-                        ->onUpdate('cascade');
                   $table->boolean('for_sale')->default(false);//Valor booleano (true o false) que indica si el inmueble esta diponible para la venta o no.
                   $table->boolean('for_rent')->default(false);//Valor booleano (true o false) que indica si el inmueble esta diponible para la renta (alquilar, arrendar) o no.
                   $table->boolean('for_transfer')->default(false);//Valor booleano (true o false) que indica si el inmueble esta disponible para permutar (transferencia).
@@ -88,10 +85,9 @@ class CreatePropertiesTable extends Migration
                   $table->foreign('availability_id')->references('id')->on('property_availabilities')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
-                  $table->integer('publish_on_map_id')->unsigned();//Identificador que indica el tipo de publicación en Google maps, ver la sección Publicación en Google maps de la propiedad.
-                  $table->foreign('publish_on_map_id')->references('id')->on('publication_google_maps')
-                        ->onDelete('cascade')
-                        ->onUpdate('cascade');
+                  $table->integer('publish_on_map_id')->nullable()->unsigned();//Identificador que indica el tipo de publicación en Google maps, ver la sección Publicación en Google maps de la propiedad.
+                  $table->enum('state_property', ['Activo', 'Suspendido', 'Inactivo'])->default('Inactivo');
+                  $table->string('main')->default('../images/slider/not_image.jpg');
                   $table->timestamps();
             });
       }

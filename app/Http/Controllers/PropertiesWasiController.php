@@ -5,12 +5,8 @@ namespace App\Http\Controllers;
 use App\Providers\HttpRequestsProvider as ClientHttp;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
-use App \{
-	Property, Gallery
-};
-use App\Modelsgenerals \{
-	Country, Departament, Municipality
-};
+use App\ModelsProperties\Property;
+use PHPUnit\Framework\MockObject\Stub\Exception;
 
 class PropertiesWasiController extends Controller
 {
@@ -81,10 +77,25 @@ class PropertiesWasiController extends Controller
 				//dd($property);
 		}
 	}
-	public static function getFeatureWasiAttribute()
+
+	public static function getClientPropertiesWasiAttribute($property_id)
+	{
+		dd($property_id);
+	}
+	public static function getPropertiesWasiAttribute()
+	{
+		try {
+			$propertiesWasi = self::getDataWasi('property/search');
+			Property::getPropertiesWasiAttribute($propertiesWasi);
+		} catch (Exception $e) {
+			Log::emergency('Error al obtener la propiedad de wasi');
+		}
+	}
+
+	public static function getDataWasi($url)
 	{
 		$client = new ClientHttp('');
-		$data = $client->get('feature/all');
+		$data = $client->get($url);
 		return $data;
 	}
 	public static function setGalleries(array $galleries_inv)
@@ -146,33 +157,6 @@ class PropertiesWasiController extends Controller
 			unset($features_list);
 		}
 		return ($result_feature);
-	}
-	public static function getCountryAtributte(string $country)
-	{
-		try {
-			$country = Country::select('id')->where('description', $country)->get();
-			return json_decode($country[0]['id']);
-		} catch (Exception $e) {
-			Log::warning('Error al recibir el pais de wasi');
-		}
-	}
-	public static function getDepartamentAtributte(string $departament)
-	{
-		try {
-			$departament = Departament::select('id')->where('description', $departament)->get();
-			return json_decode($departament[0]['id']);
-		} catch (Exception $e) {
-			Log::warning('Error al recibir el Departamento de wasi');
-		}
-	}
-	public static function getMunicipalityAtributte(string $municipality)
-	{
-		try {
-			$municipality = Municipality::select('id')->where('description', $municipality)->get();
-			return json_decode($municipality[0]['id']);
-		} catch (Exception $e) {
-			Log::warning('Error al recibir el Municipio de wasi');
-		}
 	}
 
 	public function getProperties(Request $request)

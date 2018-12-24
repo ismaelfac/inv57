@@ -1,7 +1,8 @@
 <?php
 
-use App\PropertyCondition;
+use App\ModelsProperties\PropertyCondition;
 use Illuminate\Database\Seeder;
+
 class propertyConditionsTableSeeder extends Seeder
 {
     public function run()

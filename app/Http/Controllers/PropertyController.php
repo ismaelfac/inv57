@@ -2,23 +2,23 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Http\Requests\PropertiesRequest;
-use App\Property;
-use App\PropertyType;
+use App\ModelsProperties \{
+    Property, PropertyType, Feature, SocialStratum
+};
+use App\Modelsgenerals \{
+    Country, Departament, Municipality, Location, Neighborhood
+};
+use App \{
+    Gallery
+};
+use App\Http\Controllers\PropertiesWasiController;
 
 class PropertyController extends Controller
 {
     public function __construct()
-    {
-
-    }
-    public function getProperties()
-    {
-        $properties = Property::getPropertiesAttribute();
-        return response()->json($properties);
-    }
-    public function searchProperties($property_id)
     {
 
     }
@@ -36,7 +36,11 @@ class PropertyController extends Controller
     public function create()
     {
         $propertiesType = PropertyType::all();
-        return view('admin2.modules.properties.create', compact('propertiesType'));
+        $features_int = Feature::where('int_ext', '1')->get();
+        $features_ext = Feature::where('int_ext', '0')->get();
+        $countries = Country::all();
+        $galleries = Gallery::where('property_id', '1')->get();
+        return view('admin2.modules.properties.create', compact('propertiesType', 'features_int', 'features_ext', 'departaments', 'countries', 'galleries'));
     }
 
     /**
@@ -45,10 +49,10 @@ class PropertyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Property $property)
+    public function store(Request $request, Property $Property)
     {
-        $property = Property::create($request::all());
-        $property->roles()->sync($request->get('roles')); //update roles
+        dd($request->all());
+        $property = Property::create($request->all());
         return redirect()->route('properties.edit', $property->id)->with('info', 'Usuario Guardado con Exito');
     }
 
@@ -78,9 +82,15 @@ class PropertyController extends Controller
      */
     public function edit(Property $property)
     {
-        $roles_unique = ($property->isAdministrador() ? $this->getRoles_inv() : Role::find($property));
-        $roles_personalized = Role::where('special', null)->paginate(5);
-        return view('admin2.modules.properties.edit', compact('user', 'roles_unique', 'roles_personalized'));
+        $propertiesType = PropertyType::all();
+        $features_int = Feature::where('int_ext', '1')->get();
+        $features_ext = Feature::where('int_ext', '0')->get();
+        $countries = Country::all();
+        $social_stratum = SocialStratum::all();
+        $property = Property::getPropertiesAttribute($property->id);
+        $property = $property[0];
+        //dd($property);
+        return view('admin2.modules.properties.edit', compact('property', 'propertiesType', 'features_ext', 'features_int', 'countries', 'social_stratum'));
     }
 
     /**
@@ -92,9 +102,11 @@ class PropertyController extends Controller
      */
     public function update(Request $request, Property $property)
     {
+        dd($request->all());
         $property->update($request->all()); //update user
-        $client->roles()->sync($request->get('roles')); //update roles
-        return redirect()->route('properties.index', $client->id)->with('info', 'Usuario Actualizado con Exito');
+        $property->features()->sync($request->get('features_int', 'features_ext')); //update caracteristicas
+        //$property->PropertiesWasiController::setPropertyWasi($property); //guardar propiedad en Wasi
+        return redirect()->route('properties.index', $property)->with('info', 'Usuario Actualizado con Exito');
     }
 
     /**

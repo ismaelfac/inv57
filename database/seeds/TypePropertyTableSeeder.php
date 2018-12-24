@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
-use App\PropertyType;
+use App\ModelsProperties\PropertyType;
 
 class TypePropertyTableSeeder extends Seeder
 {
