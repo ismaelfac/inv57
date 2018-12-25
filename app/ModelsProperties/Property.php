@@ -253,17 +253,10 @@ class Property extends Model
             }
         } catch (Exception $e) {
             DB::rollBack();
-            Log::warning('Error al sincronizar la propiedad con wasi');
+            Log::emergency('Error al sincronizar la propiedad con wasi');
         }
     }
-    public static function getMainImageAttribue($main_page, $galleries)
-    {
-        return [
-            'id_gallery' => $main_page['id_gallery'],
-            'id_image' => $main_page['id_image'],
-            'url' => self::loadImage($main_page['url'], 'main_' . $main_page['id_gallery'])
-        ];
-    }
+
     public static function getGalleriesAttribue($galleries)
     {
         dd($galleries);

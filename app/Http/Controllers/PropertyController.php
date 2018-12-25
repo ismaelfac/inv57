@@ -25,7 +25,7 @@ class PropertyController extends Controller
     public function index(Request $request)
     {
         $properties = Property::getPropertiesAttribute();
-        //dd($properties);
+        dd($properties);
         return view('admin2.modules.properties.index', compact('properties'));
     }
     /**
