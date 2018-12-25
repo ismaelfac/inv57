@@ -3,19 +3,18 @@
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use App\ModelsProperties\PropertyType;
+use App\Http\Controllers\PropertiesWasiController;
 
 class TypePropertyTableSeeder extends Seeder
 {
     public function run()
     {
-        $data = file_get_contents("database/Queries/type_properties.json");
-        $type_property = json_decode($data, true);
-        
-        //dd($type_property);
-        foreach ($type_property as $value) {
+        $data = PropertiesWasiController::getDataWasi('property-type/all');
+        $length = sizeof($data);
+        for ($i = 0; $i < $length - 2; $i++) {
             PropertyType::create([
-                'name' => $value['name'],
-                'slug' => Str::slug($value['name'])
+                'name' => $data[$i]['name'],
+                'id_property_type' => $data[$i]['id_property_type']
             ]);
         }
     }

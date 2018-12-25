@@ -6,6 +6,7 @@ use App\Modelsgenerals \{
     Location
 };
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 
 class Neighborhood extends Model
 {
@@ -30,7 +31,6 @@ class Neighborhood extends Model
             $neighborhood = Neighborhood::select('id')->where('description', 'LIKE', $neighborhoodWasi . '%')->get();
             $data = $neighborhood->toJson();
             $data = json_decode($data);
-            $lenght = sizeof($data);
             return $data[0]->id;
         } else {
             Log::emergency('EL barrio no se logro resolver');

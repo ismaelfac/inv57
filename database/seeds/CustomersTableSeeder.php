@@ -13,7 +13,7 @@ class CustomersTableSeeder extends Seeder
     {
         $data = PropertiesWasiController::getDataWasi('client/search');
         $lengthCustomers = sizeof($data);
-        dd($data);
+        dd('customers');
         for ($i = 0; $i <= $lengthCustomers; $i++) {
             error_reporting(0);
             Customer::firstOrCreate([

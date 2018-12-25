@@ -94,9 +94,13 @@ class PropertiesWasiController extends Controller
 
 	public static function getDataWasi($url)
 	{
-		$client = new ClientHttp('');
-		$data = $client->get($url);
-		return $data;
+		try {
+			$client = new ClientHttp('');
+			$data = $client->get($url);
+			return $data;
+		} catch (Exception $e) {
+			Log::emergency('No hay respuesta del API Wasi');
+		}
 	}
 	public static function setGalleries(array $galleries_inv)
 	{

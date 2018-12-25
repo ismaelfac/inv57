@@ -6,6 +6,7 @@ use App\Modelsgenerals \{
     Location, Neighborhood, Municipality
 };
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 
 class Location extends Model
 {
@@ -25,18 +26,20 @@ class Location extends Model
         return $this->belongsTo(Municipality::class);
     }
 
-    public static function getFindLocationByMunicipalityAttribute($municipality)
+    public static function getFindLocationByNeighborhoodAttribute($neighborhood)
     {
-        $result_id = Location::select('id')->where('municipality_id', $municipality)->get();
+        $result_id = Location::select('id')->where('id', $neighborhood)->get();
         $result_id = $result_id->toJson();
         $data = json_decode($result_id);
         return $data[0]->id;
     }
-    public static function getLocationforAttribute(String $municipalityWasi)
+    public static function getLocationforAttribute(String $zone_label)
     {
-        $municipality = Municipality::getMunicipalityAttribute($municipalityWasi);
-        $location = Location::getFindLocationByMunicipalityAttribute($municipality);
-        return ($location ? : 1);
+        $location = Neighborhood::select('location_id')->where('description', 'LIKE', $zone_label . '%')->get();
+        $data = $location->toJson();
+        $data = json_decode($data);
+        $result = $data[0]->location_id;
+        return ($result ? : 0);
     }
 
     public function getUrlAttribute()

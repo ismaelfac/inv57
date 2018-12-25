@@ -44,7 +44,6 @@ class DatabaseSeeder extends Seeder
             CivilstatusTableSeeder::class,
             UserTableSeeder::class,
             TypeClientTableSeeder::class,
-            CustomersTableSeeder::class,
             TypePropertyTableSeeder::class,
             TypeRentsSeeder::class,
             FeatureTableSeeder::class,
@@ -54,6 +53,7 @@ class DatabaseSeeder extends Seeder
             statePagesTableSeeder::class,
             CategoryTableSeeder::class,
             PropertiesTableSeeder::class,
+            CustomersTableSeeder::class,
             CommentTableSeeder::class
         ]);
     }

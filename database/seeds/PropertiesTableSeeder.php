@@ -6,6 +6,6 @@ class PropertiesTableSeeder extends Seeder
 {
     public function run()
     {
-        $properties = PropertiesWasiController::getDataWasi('property/clients/', '691358');
+        $properties = PropertiesWasiController::getPropertiesWasiAttribute();
     }
 }
