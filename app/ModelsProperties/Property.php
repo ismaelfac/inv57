@@ -1,6 +1,7 @@
 <?php
 namespace App\ModelsProperties;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Caffeinated\Shinobi\Models\Role;
 use App\Modelsgenerals \{
     Country, Departament, Location, Municipality, Neighborhood
@@ -20,6 +21,8 @@ use Illuminate\Support\Facades\DB;
 
 class Property extends Model
 {
+    use SoftDeletes;
+
     protected $table = 'properties';
     protected $fillable = [
         'propertywasi_id', 'id_user_wasi', 'client_id', 'for_sale', 'for_rent', 'for_transfer', 'property_type_id', 'country_id', 'departament_id', 'municipality_id', 'location_id', 'neighborhood_id', 'iso_currency', 'title', 'address', 'area', 'unit_area_label', 'built_area', 'id_unit_built_area', 'unit_built_area_label', 'maintenance_fee', 'sale_price', 'rent_price', 'bedrooms', 'bathrooms', 'garages', 'floor', 'stratum', 'social_stratum_id', 'observations',
@@ -31,7 +34,8 @@ class Property extends Model
         'for_rent' => 'boolean',
         'for_transfer' => 'boolean'
     ];
-    public $incrementing = false;
+    protected $dates = ['deleted_at'];
+
     public function country()
     {
         return $this->belongsTo(Country::class);
@@ -167,7 +171,7 @@ class Property extends Model
             ];
             return $properties;
         } catch (Exception $e) {
-
+            Log::emergency('Error al obtener la propiedad local' . $e);
         }
     }
     public static function getPropertiesWasiAttribute($propertiesWasi)

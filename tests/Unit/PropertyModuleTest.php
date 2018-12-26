@@ -14,12 +14,13 @@ class PropertyModuleTest extends TestCase
     /** @test **/
     function set_features_of_a_propertyt()
     {
-
+        $this->markTestIncomplete('This test has not been implemented yet.');
         $this->assertTrue(true);
     }
     /** @test **/
     function get_features_of_a_propertyt()
     {
+        $this->markTestIncomplete('This test has not been implemented yet.');
         $this->assertTrue(true);
     }
 }

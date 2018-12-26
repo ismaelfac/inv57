@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Events\UserRegistred;
 
 class RegisterController extends Controller
 {
@@ -28,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = 'welcometoregistre';
 
     /**
      * Create a new controller instance.
@@ -70,7 +72,8 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'entry' => 'web'
         ]);
-        $user->roles()->sync(['4']);
+        //event activationCode - assignRole
+        event(new UserRegistred($user));
         return $user;
     }
 }

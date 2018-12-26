@@ -115,4 +115,8 @@ class UserController extends Controller
             return back()->with('info', 'Usuario Activado Correctamente');
         }
     }
+    public function delete(User $user)
+    {
+        $user->delete();
+    }
 }

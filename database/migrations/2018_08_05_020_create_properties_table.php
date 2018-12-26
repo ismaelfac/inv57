@@ -89,6 +89,7 @@ class CreatePropertiesTable extends Migration
                   $table->enum('state_property', ['Activo', 'Suspendido', 'Inactivo'])->default('Inactivo');
                   $table->string('main')->default('../images/slider/not_image.jpg');
                   $table->timestamps();
+                  $table->softDeletes();
             });
       }
 

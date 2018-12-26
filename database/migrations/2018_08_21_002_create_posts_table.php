@@ -19,8 +19,8 @@ class CreatePostsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedInteger('category_id');
             $table->foreign('category_id')
-                  ->references('id')
-                  ->on('categories');
+                ->references('id')
+                ->on('categories');
             $table->string('title');
             $table->string('slug');
             $table->mediumText('content');
@@ -28,6 +28,7 @@ class CreatePostsTable extends Migration
             $table->unsignedInteger('answer_id')->nullable();
             $table->integer('score')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

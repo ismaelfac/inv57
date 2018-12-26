@@ -53,12 +53,12 @@
                                 <!-- blog-details-reply -->
                                 <div class="leave-review">
                                     <h5>Dejanos tu mensaje</h5>
-                                    <form  id="contact-form" action="mail.php" method="post">
-                                        <input type="text" name="name" placeholder="Nombres Completos">
-                                        <input type="email" name="email" placeholder="Email">
-                                        <textarea name="message" placeholder="Cual es tu mensaje?"></textarea>
-                                        <button type="submit" class="submit-btn-1">ENVIAR   </button>
-                                    </form>
+                                    {!! Form::open(['route' => 'contacts.store', 'method' => 'POST', 'id' => 'contact-form']) !!}
+                                        {!! Form::text('name', ['class' => 'form-control','placeholder' => 'Nombres Completos']) !!} 
+                                        {!! Form::text('email', ['class' => 'form-control','placeholder' => 'Email']) !!} 
+                                        {!! Form::textarea('message', ['rows' => 4,'style' => 'resize:none']) !!}    
+                                        {!! Form::submit('Enviar', ['class' => 'submit-btn-1'])!!} 
+                                    {!! Form::close() !!}                             
                                     <p class="form-messege mb-0"></p>
                                 </div>
                             </div>

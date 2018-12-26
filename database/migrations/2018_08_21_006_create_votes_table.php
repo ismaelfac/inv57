@@ -21,8 +21,8 @@ class CreateVotesTable extends Migration
             $table->string('votable_type', 20)->index();
             $table->unique(['user_id', 'votable_id', 'votable_type']);
             $table->tinyInteger('vote');
-
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -21,6 +21,7 @@ class CreateContractTable extends Migration
                 ->onUpdate('cascade');
             $table->date('date_contract')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

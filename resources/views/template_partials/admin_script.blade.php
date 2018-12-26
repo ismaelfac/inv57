@@ -16,3 +16,4 @@
     <script src="{{ asset('admin2/js/demo/chart-area-demo.js') }}"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script src="{{ asset('js/panel.js') }}"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>

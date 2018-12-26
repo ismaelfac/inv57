@@ -15,14 +15,18 @@
 Auth::routes(['verify' => true]);
 
 Route::get('/', 'HomeController@index')->name('/');
+Route::get('welcometoregistre', function () {
+    return view('emails.welcome');
+})->name('bienvenido')->middleware('verified');
 Route::get('sobre-nosotros', 'HomeController@about')->name('about');
 Route::get('marca', 'HomeController@brand')->name('marca');
 Route::get('propiedades', 'HomeController@properties')->name('properties');
 Route::get('blog', 'HomeController@blog')->name('blog');
 Route::get('contactenos', 'HomeController@contact')->name('contact');
 Route::get('getProperties/{per_page}', 'PropertyController@getProperties');
+Route::resource('contacts', 'ContactController');
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     //parameters
     Route::resource('countries', 'Parameters\CountryController')->middleware('has.permission:countries.index');
     Route::resource('departaments', 'Parameters\DepartamentController')->middleware('has.permission:departaments.index');

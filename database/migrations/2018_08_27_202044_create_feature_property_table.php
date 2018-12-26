@@ -23,6 +23,7 @@ class CreateFeaturePropertyTable extends Migration
                 ->onUpdate('cascade');
             $table->boolean('int_ext')->default(false);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
